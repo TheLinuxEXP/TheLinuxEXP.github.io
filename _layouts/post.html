@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+{% include outdated.html post=page %}
+
+<article>
+  {% if page.hidden %}
+    <aside class="embargo">
+      {% if page.hidden != true %}
+        <h1>Under embargo until {{ page.hidden | date: "%a, %b %e, %Y %H:%M" }} UTC!</h1>
+        <p>Please respect the embargo by not sharing this URL. The content below may be subject to minor changes before the embargo is lifted.</p>
+      {% else %}
+        <h1>Note: This post is hidden!</h1>
+        <p>Please respect any embargoes by not sharing this URL. The content below may be unfinished, inaccurate, or subject to change.</p>
+      {% endif %}
+      <hr />
+    </aside>
+  {% endif %}
+  <header>
+    <h1>{% include title.html title=page.title %}</h1>
+    {% if page.description %}
+      <h2>{% include title.html title=page.description %}</h2>
+    {% endif %}
+
+    {% include byline.html author=page.author date=page.date content=page.content link=true %}
+    {% include tags.html %}
+  </header>
+
+  <section>
+    {{ content }}
+  </section>
+
+  {% include thanks.html %}
+</article>
+
+{% include license.html %}
+{% include social.html %}
+
+<h2 class="up-next">Up Next</h2>
+
+{% if page.next %}
+  {% unless page.next.hidden %}
+    {% include featured.html post=page.next %}
+  {% endunless %}
+{% endif %}
+
+{% if page.previous %}
+  {% unless page.previous.hidden %}
+    {% include featured.html post=page.previous %}
+  {% endunless %}
+{% endif %}
+

@@ -1,0 +1,78 @@
+{% unless page.thanks %}
+<div class="thanks">
+  <hr/>
+
+  <h2>Thank You</h2>
+  <p>Thanks to all of our supporters, backers, and customers! Your contributions make elementary possible. If you’d like to help build and improve elementary OS, don’t hesitate to <a href="https://elementary.io/get-involved">Get Involved</a>.</p>
+
+  <div class="links">
+    <a
+      href="https://elementary.io/"
+      rel="noreferrer nofollow noopener"
+      target="_blank"
+      title="elementary downloads"
+    >
+      {% include svg/elementary.svg %}
+    </a>
+
+    <a
+      href="https://appcenter.elementary.io"
+      rel="noreferrer nofollow noopener"
+      target="_blank"
+      title="AppCenter"
+    >
+      {% include svg/appcenter.svg %}
+    </a>
+
+    <a
+      href="https://www.patreon.com/elementary"
+      rel="noreferrer nofollow noopener"
+      target="_blank"
+      title="Patreon"
+    >
+      {% include svg/patreon.svg %}
+    </a>
+
+    <a
+      href="https://www.paypal.me/elementary"
+      rel="noreferrer nofollow noopener"
+      target="_blank"
+      title="Paypal"
+    >
+      {% include svg/paypal.svg %}
+    </a>
+
+    <a
+      href="https://elementary.io/store/"
+      rel="noreferrer nofollow noopener"
+      target="_blank"
+      title="elementary merch store"
+    >
+      {% include svg/shopping-cart.svg %}
+    </a>
+  </div>
+</div>
+{% endunless %}
+
+{% if page.sponsor.name %}
+  <div class="sponsor">
+    {% if page.sponsor.link && page.sponsor.image %}
+      <a href="{{ page.sponsor.link }}" rel="noreferrer nofollow noopener" target="_blank">
+    {% endif %}
+    {% if page.sponsor.image %}
+      <img
+        src="{{ page.sponsor.image }}"
+        alt="{{ page.sponsor.name }}"
+        {% if page.sponsor.image-2x %}
+          srcset="{{ page.sponsor.image-2x }} 2x"
+        {% endif %}
+      />
+    {% endif %}
+    {% if page.sponsor.link  && page.sponsor.image %}</a>{% endif %}
+
+    <p>We'd like to specially thank
+    {% if page.sponsor.link %}
+      <a href="{{ page.sponsor.link }}" rel="noreferrer nofollow noopener" target="_blank">
+    {% endif %}{{ page.sponsor.name }}{% if page.sponsor.link %}</a>{% endif %} for sponsoring this blog post and helping to sponsor our work. {% if page.sponsor.hook %}{{ page.sponsor.hook }}{% endif %}</p>
+  </div>
+{% endif %}
