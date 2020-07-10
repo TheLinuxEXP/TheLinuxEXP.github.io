@@ -8,31 +8,11 @@ mastodon: thelinuxEXP
 twitter: thelinuxEXP
 
 authors:
-  aroman:
-    name: "Avi Romanoff"
-    description: "Enthusiasm Evangelist"
-  cassidyjames:
-    name: Cassidy James Blaede
-    description: "Co-founder & CXO"
-    gravatar: 41275ecc8271aca852ce2c0ff72d2610 # Gravatar md5 hash
-  danrabbit:
-    name: Daniel Foré
-    description: "Founder & CEO"
-    gravatar: 1f3cc76b99b5d0dae8381a23f52ea96d
-  karensophia:
-    name: Karen Sophia
-    description: "Customer Engagement"
-    # gravatar: e0ac5d5e717da67a36ac72adf235bc42
-  kgrubb:
-    name: Keli Grubb
-    description: Developer
-    gravatar: 8e8d16d136c38f3a28820490c17928d1
-  peteruithoven:
-    name: Peter Uithoven
-    description: "Front-end Developer"
-    gravatar: f39b1485b28be1dc2b98f269235218bc
-  anonymous:
-    name: "Unknown Author"
+  nick:
+    name: "Nick"
+    description: "Youtuber, writer, video maker, and Linux enthusiast"
+    gravatar: 1f0bcfea443bffd0df633833f943ff98
+  
 
 plugins:
   - jekyll-feed
