@@ -4,8 +4,9 @@ description: "We're not the best at everything, but we're still better in a lot 
 author: nick
 image: https://thelinuxexp.github.io/8-areas-cover.jpg
 tags:
-  - test
-  - meta
+  - linux
+  - article ported from the old site
+  - windows
 ---
 
 After a little bit of exploration, and a few videos on the various strengths of Linux, I decided to take a look at the areas where Linux is, in my opinion, better than Windows, and most specifically, Windows 10.
