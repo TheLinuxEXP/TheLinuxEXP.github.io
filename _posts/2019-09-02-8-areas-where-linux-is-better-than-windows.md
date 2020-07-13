@@ -14,7 +14,7 @@ After a little bit of exploration, and a few videos on the various strengths of 
 Windows 10 has been criticized a lot recently. Botched updates, weird design, messy store, and incoherent interfaces are nominated by quite a few people as areas where the system needs to improve. These areas, and some others, are where Linux shines in comparison.
 
 
-<p align="center"><iframe width="840" height="472" src="https://www.youtube.com/embed/LEnJcB03Bb4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<p align="center"><iframe width=80% src="https://www.youtube.com/embed/LEnJcB03Bb4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
 
 ## Updating your system: easier when it's all in one place
