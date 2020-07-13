@@ -5,7 +5,7 @@ author: nick
 image: /images/posts/eos-important/eos.png
 tags:
   - elementaryos
-  - article ported from the old site
+  - Article ported from the old site
 
 ---
 

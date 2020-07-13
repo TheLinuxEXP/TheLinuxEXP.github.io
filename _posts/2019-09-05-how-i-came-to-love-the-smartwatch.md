@@ -4,9 +4,9 @@ description: "I used to be harsh on smartwatches. Didn't like them, didn't want 
 author: nick
 image: /images/posts/smartwatch/galore.jpg
 tags:
-  - personal
-  - tech
-  - article ported from the old site
+  - Personal
+  - Tech
+  - Article ported from the old site
 
 ---
 

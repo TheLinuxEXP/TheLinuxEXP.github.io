@@ -5,8 +5,8 @@ author: nick
 image: /images/posts/thoughs-EGS/bdl3.jpg
 tags:
   - Gaming
-  - tech
-  - article ported from the old site
+  - Tech
+  - Article ported from the old site
 
 ---
 

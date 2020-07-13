@@ -4,8 +4,8 @@ description: "Sometimes, being scared of something doesn't mean you shouldn't do
 author: nick
 image: /images/posts/no-debt/brest.jpg
 tags:
-  - personal
-  - article ported from the old site
+  - Personal
+  - Article ported from the old site
 
 ---
 
