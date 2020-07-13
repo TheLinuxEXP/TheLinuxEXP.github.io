@@ -29,8 +29,7 @@ With flatpaks and snaps, you can get a bit more fragmentation. If your distro sh
 
 On Windows, even if app updates are managed through the Windows Store, this marketplace is still pretty understocked, and you'll probably have to install stuff from the internet with a regular installer. This makes updating these apps more of a pain, since each app can have its own update mechanism, or none at all.
 
-windows-update-and-windows-store-updating-appswindows-update-and-windows-store-updating-apps
-Two places and two very bland interfaces
+![Windows Store](/images/posts/8-areas/windows-store.png)
 
 Some angry comment suggested I willfully ignored Chocolatey, a package manager for Windows of sorts, but let's be honest: how many "regular" users know about this thing, and will be willing to go through its obscure installation instructions to get it running ?
 
@@ -40,9 +39,7 @@ So, advantage Linux on that one, it might not be perfect yet, but it's still bet
 
 It might seem redundant, but it's not. On Windows, you can manage your apps from one place, if you decide to only install apps from the store. That means you'll miss out on most of the great Windows programs available out there, and most people won't do that. So you still have to search for a program online, download its installer, run it, etc...
 
-windows-store-scrolled-showing-spotify-and-netflixwindows-store-scrolled-showing-spotify-and-netflix
-The store does look ok, but its contents are subpar
-
+![Store](/images/posts/8-areas/store.png)
 
 Again, you could use Chocolatey, and if you're stuck on Windows, I recommend you do so, but this is not something most users are aware of.
 
@@ -60,8 +57,7 @@ Windows is the most used OS on the planet, on the desktop at least. This means i
 
 So, obviously, Windows is more subject to malware, ransomware, spyware, and all other evil-wares. The fact that you need to hunt down and install most programs manually is also a security issue: these installers can download and install crap from anywhere without you knowing, where on Linux, packages from your repos are carefully vetted and monitored.
 
-micro-torrent-installing-avast-behind-users-backmicro-torrent-installing-avast-behind-users-back
-Micro Torrent is a perfect example of dark pattern UX
+![Micro Torrent](/images/posts/8-areas/microtorrent.png)
 
 It also defaults to ask you for a root password, when Windows users only have to click "Yes" to give the necessary rights to a program to install itself. You can avoid these issues on Windows by running anti-malware and antivirus software, but this will eat up your precious CPU cycles and RAM, when on Linux, the only reason you'd want to run this is if you're planning to exchange files with a windows user.
 
@@ -70,13 +66,12 @@ The open source nature of Linux also means that, while anyone can look at its co
 ## Privacy: Windows 10 likes Data
 
 Apart from Ubuntu which asks the user for telemetry data, I know of no Linux distro that collects personal information. No email addresses, passwords, names, phone numbers, etc.
-ubuntu-data-collection-example-telemetry-dataubuntu-data-collection-example-telemetry-data
-Ubuntu has been much maligned for its data collection, even though it's only telemetry
+
+![Ubuntu Data Collection](/images/posts/8-areas/ubuntudata.png)
 
 WIndows 10, on the other hand, asks for a lot. First, it really insists that you create a Microsoft account when you set up your PC, with all the data you'll need to input for that to work. Then, it bombards you with screen after screen asking for your permission to collect handwriting data, speech data, information about your computer (which you can't even fully disable), and more.
 
-windows-10-data-collection-user-preferenceswindows-10-data-collection-user-preferences
-See all these sidebar categories ? All data collection
+![Windows 10 Data Collection](/images/posts/8-areas/windowsdata.png)
 
 At least, you're informed it's taking place, and you can disable most (but not all) of it, but these things are all checked by default, and an unwary user will then transmit a bunch of stuff to Microsoft every time they use their computer.
 
@@ -94,8 +89,7 @@ Customization: As Long as You Want it In Black
 
 Most, if not all Linux distros can be tweaked. The global theme, the icons, the fonts, the extensions, even the desktop environments can be changed a lot. You can set up your computer any way you want it, to suit any workflow.
 
-Windows-10-customization-colors-dark-themeWindows-10-customization-colors-dark-theme
-Customization is not Windows' strong suit. And yes, this copy running in a VM is not activated.
+![Windows 10 Customization](/images/posts/8-areas/colorchoice.png)
 
 On Windows, you can move the taskbar around, and set a dark theme, or select an accent color. Don't like the icons, the fonts, or the fact that the taskbar hasn't substantially evolved in the last 20 years ? Too bad. You might want to install other programs, third party stuff to add more functionnality, but that comes with its own set of problems, namely possible breakage with updates, imperfect workflow integration, and duplicate features.
 
@@ -107,14 +101,15 @@ Hey, many people seem to not care about this, and are OK with every program look
 
 On Windows 10, you have many, many different app styles. You have the apps that look like they were migrated straight from Windows 98, with menubars, older icons, and table view everywhere. The disk manager or Notepad are prime examples. You then have WIndows 7 style apps, like the file manager, with a ribbon interface, a newer, 3D, glossy set of icons. And you have Windows 8 / Windows 10 style apps, mostly referred to as UWP apps, with burger menus, pivot tabs, and a semi transparent user interface designed as an hybrid between touch and mouse input.
 
-windows-10-file-explorer-microsoft-edge-control-panel-settingswindows-10-file-explorer-microsoft-edge-control-panel-settings
-Not one of these apps looks or feel like the other, and yet they all ship with Windows 10 by default.
+![Windows 10 Incoherences](/images/posts/8-areas/incoherence.png)
 
 These styles don't mesh. At all. You end up having to re-learn everything every time you're faced with an app you never used before. Microsoft is working on this, bringing updated versions of its apps with the "fluent" design language, but it's still not there yet.
 
 On Linux, you can get to the same point, if you mix and match apps from different desktop environments. KDE apps don't look like GNOME apps, that's true, and elementary apps, while not that different from GNOME apps design-wise, are still not totally conforming to the same UI conventions.
 
 If you stick to a specific DE's apps, though, you get consistency. More consistency than on any other platform, in fact, Mac OS X included.
+
+<p align="center"><iframe width="840" height="472" src="https://www.youtube.com/embed/CJyzR-deHtM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
 Apps looks and behave the same, and generally are easy to pick up (apart from some more technical and advanced applications, like big photo managers, video editing software, etc.).
 
@@ -126,8 +121,7 @@ Once you start up your new OS for the first time, you quickly get a feel for it.
 
 Most users booting up a Windows machine will get a horrfying experience, not because of Windows, but because of manufacturers. They tend to add a whole software "suite" or bloatware and crapware, like DVD creation software, Control Centers, Photo Managers, AntiVirus software, and other terrible stuff.
 
-windows-10-start-menu-ads-candy-crush-saga-soda-saga-solitairewindows-10-start-menu-ads-candy-crush-saga-soda-saga-solitaire
-And that's ignoring the horrible adware shipping in your default Start Menu. Yep, in the main menu.
+![Windows 10 Ads Menu](/images/posts/8-areas/menuads.png)
 
 You often can spend hours uninstalling these, since Windows blocks you from uninstalling more than one non-UWP app at a time. Some of these programs are even very hard to uninstall, requiring multiple reboots and leaving files everywhere.
 
