@@ -23,7 +23,7 @@ This exclusive strategy is a topic for another post, let's just be quick about i
 ### Proton: a Linux gaming messiah
 <figure markdown="1">
 
-![Parrot](/images/posts/thoughs-EGS/protondb.jpg)
+![Parrot](/images/posts/thoughs-EGS/protondb.png)
 
 <figcaption>The community has rallied behind Proton, and ProtonDB is the place to go to check game compatibility</figcaption>
 </figure>
@@ -40,7 +40,7 @@ Valve, with their integration of SteamPlay / Proton, has changed the gaming land
 ### Epic Games is not Linux-Friendly
 <figure markdown="1">
 
-![Parrot](/images/posts/thoughs-EGS/abzu.jpg)
+![Parrot](/images/posts/thoughs-EGS/abzu.png)
 
 <figcaption>The community has rallied behind Proton, and ProtonDB is the place to go to check game compatibility</figcaption>
 </figure>
