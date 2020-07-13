@@ -9,9 +9,6 @@ tags:
 
 ---
 
-So, I'll be moving out before the end of the year. Some of you might know I've been living in Brest, Brittany, France, for a year and a half. I actually had lived there for 7 years, during my first years of med school, and then, after I quit, during my Economical Studies and Marketing degree.
-
-
 ![elementary OS](/images/posts/eos-important/eos.png)
 
 It's no secret I'm partial to elementary OS. It's the distribution that reconciled me with Linux after a hiatus of a few years, after all. When I moved back here in Brest, I bought a new computer, onto which elementary OS found its way, and I kept using it until I bought a much more powerful and recent desktop, which the older base that elementary OS ships with wasn't really made for.
@@ -61,7 +58,7 @@ Second, because elementary OS allows developers to use a "pay what you want" sys
 
 <figure markdown="1">
 
-![epiphany](/images/posts/8-areas/pay-watchawant.png)
+![epiphany](/images/posts/eos-important/pay-watchawant.png)
 
 <figcaption>The "pay what you want" model at work</figcaption>
 </figure>
@@ -90,7 +87,7 @@ I like the fact that the elementary team does not compromise their vision for th
 
 <figure markdown="1">
 
-![epiphany](/images/posts/8-areas/shortcuts.png)
+![epiphany](/images/posts/eos-important/shortcuts.png)
 
 <figcaption>By default, pressing "super" will open a cheatsheet of keyboard shortcuts</figcaption>
 </figure>
