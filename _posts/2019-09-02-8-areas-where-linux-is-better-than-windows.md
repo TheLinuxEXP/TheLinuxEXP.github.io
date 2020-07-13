@@ -2,7 +2,7 @@
 title:  "8 Areas where Linux is Better than Windows"
 description: "We're not the best at everything, but we're still better in a lot of ways"
 author: nick
-image: /images/posts/8-areas-cover.jpg
+image: /images/posts/8-areas/8-areas-cover.jpg
 tags:
   - linux
   - article ported from the old site
@@ -21,8 +21,7 @@ Windows 10 has been criticized a lot recently. Botched updates, weird design, me
 
 Nowadays, Windows manages app updates in the Windows Store, and OS updates in the settings. While this is an improvement from older versions of the system, it's still confusing. You have to check two different places to see what can or can't be updated. Compare this to most Linux distros, where you have a one stop shop to manage everything: your package manager.
 
-elementary-OS-App-Center-Package-Managerelementary-OS-App-Center-Package-Manager
-elementary OS' App Center is my favorite package manager
+![AppCenter](/images/posts/8-areas/eos-appcenter.png)
 
 Depending on the distro, you can have a nice separation between OS updates, and app updates, like on elementary OS, or they can be thrown all in one place, like in pamac on Manjaro, but with only one click, your can make sure that your whole system is up to date. Deepin is an exception here (and I'm sure there are others), putting system updates in its right-side-sliding control panel, and app updates in the Deepin Store, but generally, it's all managed in the same place.
 
