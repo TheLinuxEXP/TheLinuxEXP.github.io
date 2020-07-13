@@ -2,7 +2,7 @@
 title:  "Thoughts on the Epic Games Store, Competing, and Linux"
 description: "The Epic Games Store, as long as it uses anti-competitive practices, is bad for Linux gaming in general. A few thoughts on the matter."
 author: nick
-image: /images/posts/thoughts-EGS/bdl3.jpg
+image: /images/posts/thoughs-EGS/bdl3.jpg
 tags:
   - Gaming
   - tech
@@ -10,7 +10,7 @@ tags:
 
 ---
 
-![smartwatches](/images/posts/thoughts-EGS/bdl3.jpg)
+![smartwatches](/images/posts/thoughs-EGS/bdl3.jpg)
 
 I won't re-tell the whole story. Most of you probably know that Epic Games has a game store / launcher, financed by the truckloads of cash Fortnite generates (although I still can't understand why this game is so popular), and that Epic Games says it created it because Steam isn't fair to developers, which, you know, is hard to totally disagree with.
 
@@ -23,7 +23,7 @@ This exclusive strategy is a topic for another post, let's just be quick about i
 ### Proton: a Linux gaming messiah
 <figure markdown="1">
 
-![Parrot](/images/posts/thoughts-EGS/protondb.jpg)
+![Parrot](/images/posts/thoughs-EGS/protondb.jpg)
 
 <figcaption>The community has rallied behind Proton, and ProtonDB is the place to go to check game compatibility</figcaption>
 </figure>
@@ -40,7 +40,7 @@ Valve, with their integration of SteamPlay / Proton, has changed the gaming land
 ### Epic Games is not Linux-Friendly
 <figure markdown="1">
 
-![Parrot](/images/posts/thoughts-EGS/abzu.jpg)
+![Parrot](/images/posts/thoughs-EGS/abzu.jpg)
 
 <figcaption>The community has rallied behind Proton, and ProtonDB is the place to go to check game compatibility</figcaption>
 </figure>
@@ -57,7 +57,7 @@ The combination of Epic not caring about Linux support at all, and their exclusi
 ### Competition has to be based on the products' quality
 <figure markdown="1">
 
-![Parrot](/images/posts/thoughts-EGS/magpies.jpg)
+![Parrot](/images/posts/thoughs-EGS/magpies.jpg)
 
 <figcaption>One of these Magpies has bought some of the better grain, and now, fans of the other magpie can't have it</figcaption>
 </figure>
