@@ -29,7 +29,7 @@ Sure, you can sell the place, and hope to make your money back, and pay what you
 
 So I didn't want to take a mortgage, which pretty much locked me out of owning my own place, since I definitely don't make enough to be able to buy my own place cash any time soon.
 
-But you did take on a mortgage, in the end, though ?
+### But you did take on a mortgage, in the end, though ?
 
 Well, I thought a bit more about it. I'm pretty interested in early retirement, and financial independance from a regulat 9 to 5. And I was looking at the problem with a very short term point of view. I thought renting afforded me the freedom to, at any point, quit my job and do whatever I wished, relying on other solutions to get by, move to a smaller, cheaper place, or couch surf for some time. But that's not early retirement material, that's just pushing the deadline.
 
@@ -45,7 +45,7 @@ The way I see it now, owning my own place is a better solution: first, I can rep
 
 Owning my place will, in the future, allow me to save more money for my early retirement, net me some more financial independance, and, in the end, actually increase my freedom, at the expense of having more freedom now. Potential freedom, that is, since I'm not currently taking any advantage of it.
 
-What did you end up buying ?
+### What did you end up buying ?
 
 So, I'm buying an 80 sq. metres flat. It's nicely located, has an extra room for setting up my "studio", has a beautiful 20 sq. m. veranda where you can see the sunset, and, more importantly, is on the top floor. It will set me back financially for 10 to 15 years, sure, but in the end, I think I'll be better off that way.
 
