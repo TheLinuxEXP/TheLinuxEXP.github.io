@@ -2,7 +2,7 @@
 title:  "8 Areas where Linux is Better than Windows"
 description: "We're not the best at everything, but we're still better in a lot of ways"
 author: nick
-image: images/8-areas-cover.jpg
+image: /images/posts/8-areas-cover.jpg
 tags:
   - linux
   - article ported from the old site
