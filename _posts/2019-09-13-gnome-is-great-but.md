@@ -17,7 +17,7 @@ GNOME 3.34 has been released yesterday, and it brings a ton of new stuff. Big pe
 
 It's a great release, and I covered it all in a dedicated video on the channel, which you can find below if you haven't seen it yet! (The video is sponsored by Skillshare, I highly encourage you to try their service, but if you've heard about them before, feel free to move to 2:00 to watch the video).
 
-<p align=center> <iframe width="560" height="315" src="https://www.youtube.com/embed/ElfpeiDHbwE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<p align="center" > <iframe width="560" height="315" src="https://www.youtube.com/embed/ElfpeiDHbwE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p>
 
 Now, I love GNOME. I use it everyday on Manjaro, and it's my second favorite desktop environment (you can probably guess which one is my number one...). But I have some issues with it that were highlighted when I recorded that video.
 
