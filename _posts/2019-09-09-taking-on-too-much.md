@@ -31,7 +31,7 @@ That's what I'm involved in right now. But if you've ever put your work out ther
 
 <figure markdown="1">
 
-![Parrot](/images/posts/taking-much/poll.jpg)
+![Poll](/images/posts/taking-much/poll.jpg)
 
 <figcaption>If I unscientifically add the second and third option, that's 62% of you interested in a Linux gaming channel.</figcaption>
 </figure>
