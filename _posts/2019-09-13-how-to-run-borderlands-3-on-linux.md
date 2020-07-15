@@ -2,7 +2,7 @@
 title:  "How to Run Borderlands 3 on Linux"
 description: "Here is how I got Borderlands 3 to start on Linux, with a few caveats..."
 author: nick
-image: /images/posts/bdl3/bdl3.jpg
+image: /images/posts/bdl3/bdl3.png
 tags:
   - Linux
   - Gaming
@@ -10,7 +10,7 @@ tags:
 
 ---
 
-![Borderlands 3](/images/posts/gnobdl3/bdl3.png)
+![Borderlands 3](/images/posts/bdl3/bdl3.png)
 
 
 After spending most of the afternoon on trying to get Borderlands 3 running on Linux, I managed to get it in a playable state, with a few workarounds.
