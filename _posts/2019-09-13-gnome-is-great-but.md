@@ -83,7 +83,7 @@ These are my issues with GNOME. I still love that desktop, though. It's gotten f
 
 Its applications are basic, but simple to use, and coherent. Once you learn where the buttons and controls are on one, you know how to use them all, and that's not a small feat. (Get it ? Feat ? Feet ? Okay, moving on).
 
-I like where GNOME is headed. The headerbars are awesome, the simple and accessible feeling is great, the extension system, while it needs work to be more stable between releases, allows users to tweak their desktop quite a bit, and the developers actually [https://blogs.gnome.org/aday/2019/09/04/towards-a-ux-strategy-for-gnome-part-1/](started to lay down a vision for GNOME's UX), which means they are still working on improving it and not resting on their laurels.
+I like where GNOME is headed. The headerbars are awesome, the simple and accessible feeling is great, the extension system, while it needs work to be more stable between releases, allows users to tweak their desktop quite a bit, and the developers actually [started to lay down a vision for GNOME's UX](https://blogs.gnome.org/aday/2019/09/04/towards-a-ux-strategy-for-gnome-part-1), which means they are still working on improving it and not resting on their laurels.
 
 I've been a user of GNOME 2 for a long time. Then Unity came around, and while the shell was different, the apps were mostly GNOME's. Then Pantheon came into my life, and while the default apps were different, I still used a ton of GNOME 3 apps, which never looked out of place on elementary OS. And finally, I moved to Manjaro GNOME, and, apart from a dock and a minimize button, I have no other extensions.
 
