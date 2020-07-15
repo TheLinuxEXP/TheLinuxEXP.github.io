@@ -21,13 +21,13 @@ This is a question I get often. From people online, from my friends, or from my 
 
 And I didn't really think about why before now. An annoyed shrug was my answer, wondering "yeah, why don't I just double-boot and play on Windows ?". Well, I have an answer now !
 
-### I hate double booting
+### I hate dual booting
 
-Double booting sucks. You have to stop everything you're doing, restart your computer, select your second OS (impossible to do with a bluetooth keyboard, so that also means I'd have to use a wired keyboard and clutter my perfect desk), wait for it to boot, and restart the various launchers / Discord / whatever you use to play.
+Dual booting sucks. You have to stop everything you're doing, restart your computer, select your second OS (impossible to do with a bluetooth keyboard, so that also means I'd have to use a wired keyboard and clutter my perfect desk), wait for it to boot, and restart the various launchers / Discord / whatever you use to play.
 
 There is also the jarring transition of using an OS I'm deeply familiar with, and moving to Windows, an OS I haven't used as a primary system for a long time now.
 
-Double booting is also very space inefficient: you have at least 20-30 Gb lost just to run that second OS. It also demands some organization to not turn into a nightmare: put all your games on one of the OSes, or you'll spend your time moving back and forth, rebooting your machine, or end up with games you installed on both systems (extremely inefficient).
+Dual booting is also very space inefficient: you have at least 20-30 Gb lost just to run that second OS. It also demands some organization to not turn into a nightmare: put all your games on one of the OSes, or you'll spend your time moving back and forth, rebooting your machine, or end up with games you installed on both systems (extremely inefficient).
 
 There's also the update situation. Everything gets updated nowadays, and on a secondary system, you'll get pestered everytime you boot into it to update the OS, the games, the launchers, the applications you use. It's a huge loss of time, especially since Windows likes to reboot after updates, and its updates can also break GRUB from time to time.
 
