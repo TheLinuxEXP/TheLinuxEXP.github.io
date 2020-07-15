@@ -2,7 +2,7 @@
 title:  "Returning to Borderlands (yes, the first one)"
 description: "As I took my time through Borderlands 3's campaign, I felt the need to re-visit the first installment in the series. It has aged well."
 author: nick
-image: /images/posts/bdl1/grub.png
+image: /images/posts/bdl1/bdl1.png
 tags:
   - Linux
   - Gaming
@@ -35,7 +35,7 @@ It's been ten years since I played the original Borderlands, so how does it stac
 
 <figure markdown="1">
 
-![Splash](/images/posts/bdl1/blueclaptrap.jpg)
+![Clap Trap](/images/posts/bdl1/blueclaptrap.jpg)
 
 <figcaption>Not incredibly pretty by 2019 standards, but still, the level of detail isn't bad.</figcaption>
 </figure>
@@ -50,7 +50,7 @@ Now, for the less glorious stuff! The gunplay is not great, the characters all f
 ### Gunplay and characters: limited in a charming way
 <figure markdown="1">
 
-![Splash](/images/posts/bdl1/scope.jpg)
+![Sniper Scope](/images/posts/bdl1/scope.jpg)
 
 <figcaption>Most guns are very imprecise, even when aiming down sights.</figcaption>
 </figure>
@@ -64,7 +64,7 @@ The characters are all the same underneath, and that's because they barely speak
 ### The long drives make the world feel real
 <figure markdown="1">
 
-![Splash](/images/posts/bdl1/car.jpg)
+![Cath A Ride](/images/posts/bdl1/car.jpg)
 
 <figcaption>You'll have to "catch a riiiiiiide" more often than in the later instalments.</figcaption>
 </figure>
@@ -78,7 +78,7 @@ It's the same for Borderlands 1 and 3: the first one, I could still remember eve
 ### The lack of story lets you create your own
 <figure markdown="1">
 
-![Splash](/images/posts/bdl1/gun.jpg)
+![Fyrestone](/images/posts/bdl1/gun.jpg)
 
 <figcaption>The story begins in Fyrestone, but it never really advances past "move there, kill this guy".</figcaption>
 </figure>
