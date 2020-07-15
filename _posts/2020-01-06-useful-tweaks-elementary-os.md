@@ -83,12 +83,12 @@ To install it, just type these commands in a terminal:
 
 Add support for PPAs to your elementary OS:
 
-'sudo apt install software-properties-common'
+    'sudo apt install software-properties-common'
 
 
 Add the elementary-tweaks PPA:
 
-    'sudo add-apt-repository ppa:philip.scott/elementary-tweaks'it
+    'sudo add-apt-repository ppa:philip.scott/elementary-tweaks'
 
 
 Install elementary tweaks:
@@ -103,6 +103,6 @@ And there you go, the three main tweaks I added to elementary OS to make it nice
 
 If you want to learn more about elementary OS, you can also watch my latest video on their latest release, elementary OS 5.1 Hera:
 
-
+<p align="center" ><iframe width="560" height="315" src="https://www.youtube.com/embed/rpjyCeUhQlM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
 
