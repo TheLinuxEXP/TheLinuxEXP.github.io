@@ -11,7 +11,7 @@ tags:
 
 It's no secret I'm no fan of today's Apple. I feel their products are stagnating and very expensive, and their locked down approach sends shivers down my spine, as I see the many warnings I get while using Mac OS X, slowly ticking towards the end of life for many 32 bit games and applications I use everyday.
 
-I used to lust after Apple products
+### I used to lust after Apple products
 
 <figure markdown="1">
 
@@ -23,7 +23,7 @@ I used to lust after Apple products
 
 This is a strong term, but well deserved. As a student, my dream was to be able to afford a beautiful white MacBook, use OS X, and all these nicely designed apps for 10.4 Tiger. I watched videos of OS X running, drooling over the attention to detail. Sure, it was expensive, but if offered something no one else did: a beautiful package, powerful components, and a user experience no one else could even touch.
 
-As a matter of fact, my quest to make my OS look as much as OS X as could be is what drove me to use Linux in the first place. I spent hours using baghira to tweak my KDE 3.5 desktop and perfect every little detail, but it was still a copycat, and not the real thing. In the end, I ended up buying a MacBook Air when I started working, as well as an iPhone, and an iMac. All these products are now sold and gone, and the only contact I have with Apple products is my work MacBook Air, which is, to put it mildly, a terrible heap of components in a slim package.
+As a matter of fact, my quest to make my OS look as much as OS X as could be is what drove me to use Linux in the first place. I spent hours using [baghira](http://baghira.sourceforge.net/OS_Clone-en.php) to tweak my KDE 3.5 desktop and perfect every little detail, but it was still a copycat, and not the real thing. In the end, I ended up buying a MacBook Air when I started working, as well as an iPhone, and an iMac. All these products are now sold and gone, and the only contact I have with Apple products is my work MacBook Air, which is, to put it mildly, a terrible heap of components in a slim package.
 
 ### Apple has fallen very far from its tree
 
@@ -84,7 +84,7 @@ The Surface Neo is a brand new category in and of itself: a dual screen foldable
 
 <figure markdown="1">
 
-![Surface Duo](/images/posts/newms/surfaceduo.jpg)
+![Surface Duo](/images/posts/newms/surfaceduo.png)
 
 <figcaption>Whether you like dual screen devices or not, this is a beautiful product</figcaption>
 </figure>
@@ -93,7 +93,7 @@ To finish, the Surface Duo is a dual screen foldable tablet running Android with
 
 <figure markdown="1">
 
-![Surface Pro X](/images/posts/newms/surfacegofold.png)
+![Surface Fold](/images/posts/newms/surfacegofold.png)
 
 <figcaption>Not the Surface Phone people were waiting for, but a very interesting proposition nonetheless, especially with Android</figcaption>
 </figure>
@@ -108,9 +108,9 @@ When Apple fawns over small processor upgrades while keeping the exact same desi
 
 <figure markdown="1">
 
-![iPhone Optics](/images/posts/newms/iphoneoptics.jpg)
+![iPhone Optics](/images/posts/newms/iphoneoptics.png)
 
-<figcaption>This is Apple's contribution this year. A fidget spinned mounted on the back of a sea green phone that keeps its predecessor design.</figcaption>
+<figcaption>This is Apple's contribution this year. A fidget spinner mounted on the back of a sea green phone that keeps its predecessor design.</figcaption>
 </figure>
 
 Where Apple is content with incremental upgrades, Microsoft is putting its hardware out there, and trying to change people's habits.
