@@ -47,7 +47,7 @@ It might not seem convenient just because I'm used to another way of app managem
 
 <figure markdown="1">
 
-![Poll](/images/posts/gnome-is-great/epihpany.png)
+![Poll](/images/posts/gnome-is-great/epihpany.jpg)
 
 <figcaption>GNOME Web (Epiphany) has really matured a lot and is very nice these days.</figcaption>
 </figure>
