@@ -2,7 +2,7 @@
 title:  "Useful Tweaks For elementary OS"
 description: "Since I got a bunch of questions on how to add certain features to elementary OS, here are some easy, useful tweaks you can apply."
 author: nick
-image: /images/posts/tweaks-eos/tweaks.jpg
+image: /images/posts/tweaks-eos/tweaks.png
 tags:
   - Personal
   - Article ported from the old site
