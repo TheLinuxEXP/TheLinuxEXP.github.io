@@ -83,17 +83,17 @@ To install it, just type these commands in a terminal:
 
 Add support for PPAs to your elementary OS:
 
-    'sudo apt install software-properties-common'
+    sudo apt install software-properties-common
 
 
 Add the elementary-tweaks PPA:
 
-    'sudo add-apt-repository ppa:philip.scott/elementary-tweaks'
+    sudo add-apt-repository ppa:philip.scott/elementary-tweaks
 
 
 Install elementary tweaks:
 
-    'sudo apt install elementary-tweaks'
+    sudo apt install elementary-tweaks
 
 
 You'll then find a new panel in your system settings, called "Tweaks".
