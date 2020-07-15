@@ -62,8 +62,11 @@ Close the Epic Games Launcher, and right click on its icon on Lutris, then selec
 
 Open the "Runner options" tab, and disable Esync.
 
+![Esync](/images/posts/bdl3/esync.png)
+
 Then make sure the other settings are displayed as follow:
 
+![Settings](/images/posts/bdl3/settings.png)
 
 
 ### Running the game
