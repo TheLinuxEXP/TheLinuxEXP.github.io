@@ -2,7 +2,7 @@
 title:  "Returning to Borderlands (yes, the first one)"
 description: "As I took my time through Borderlands 3's campaign, I felt the need to re-visit the first installment in the series. It has aged well."
 author: nick
-image: /images/posts/bdl1/bdl1.png
+image: /images/posts/bdl1/bdl1.jpg
 tags:
   - Linux
   - Gaming
