@@ -5,7 +5,6 @@
 
 {% unless post.tags contains "evergreen" %}
   {% comment%} Two years in seconds {% endcomment %}
-  {% comment %} TODO: more dynamic age? i.e. "three years ago" or "five years ago", etc.? {% endcomment %}
   {% if ageSecs > 63072000 %}
     <aside class="outdated">
       <strong>Note:</strong> this post was written over two years ago. The information below may be outdated.
