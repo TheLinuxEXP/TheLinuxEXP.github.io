@@ -52,7 +52,7 @@ Wix wasn't working for me, and while it was easy to get started with it, it took
 
 ![elementary OS Blog](/images/posts/movingsite/eosblog.png)
 
-<figcaption>>elementary OS's blog was exactly what I needed</figcaption>
+<figcaption>elementary OS's blog was exactly what I needed</figcaption>
 </figure>
 
 I fell in love with the elementary OS blog in the meantime; it's super fast, responsive, it adapts to your desktop's or phone's dark mode, and it just looks gorgeous. I decided to look into how they were doing things, and fortunately, Cassidy James and Daniel Fore are very open and have published a few tweets and articles about their blog that I read from end to end to try to figure out how to maybe replicate that kind of blog.
