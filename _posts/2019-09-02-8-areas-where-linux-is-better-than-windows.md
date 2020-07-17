@@ -109,7 +109,7 @@ On Linux, you can get to the same point, if you mix and match apps from differen
 
 If you stick to a specific DE's apps, though, you get consistency. More consistency than on any other platform, in fact, Mac OS X included.
 
-<p align="center"><iframe width="840" height="472" src="https://www.youtube.com/embed/CJyzR-deHtM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<p align="center"><iframe style="width:75%;height:300px;" src="https://www.youtube.com/embed/CJyzR-deHtM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
 Apps looks and behave the same, and generally are easy to pick up (apart from some more technical and advanced applications, like big photo managers, video editing software, etc.).
 
