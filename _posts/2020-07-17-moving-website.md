@@ -1,6 +1,6 @@
 ---
 title:  "Moving the Website"
-description: "If you had visited thelinuxexp.com before, you might have noticed the site has changed a bit..."
+description: "If you visited thelinuxexp.com before, you might have noticed the site has changed a bit..."
 author: nick
 image: /images/posts/movingsite/header.png
 tags:
