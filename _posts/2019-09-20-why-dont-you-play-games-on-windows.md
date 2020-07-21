@@ -1,5 +1,5 @@
 ---
-title:  "Why don't You Jut Play Games on Windows?"
+title:  "Why don't You Just Play Games on Windows?"
 description: "People often ask me why I choose to play games on Linux, with all the issues that entails. Why won't I just dual boot and be done with it?"
 author: nick
 image: /images/posts/whydont/grub.png
