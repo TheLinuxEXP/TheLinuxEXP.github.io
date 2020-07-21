@@ -32,7 +32,7 @@ I used it for one full video, and I created many mini projects in it to try and 
 
 ![Kdenlive](/images/posts/davincivskdenlive/kdenlive.png)
 
-<figcaption>Kdenlive was a strong step up, and tought me a lot about video editing</figcaption>
+<figcaption>Kdenlive was a strong step up, and taught me a lot about video editing</figcaption>
 </figure>
 
 
