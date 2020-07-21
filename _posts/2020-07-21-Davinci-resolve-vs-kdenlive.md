@@ -8,9 +8,9 @@ tags:
   - Video Editing
   
 hidden: true
-date: 2020-07-21
-
 ---
+
+
 <figure markdown="1">
 
 ![DaVinci Resolve](/images/posts/davincivskdenlive/resolve.png)
