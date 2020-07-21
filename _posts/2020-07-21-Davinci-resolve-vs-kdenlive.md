@@ -13,14 +13,14 @@ hidden: true
 
 <figure markdown="1">
 
-![DaVinci Resolve](/images/posts/davincivskdenlive/resolve.png)
+![DaVinci Resolve](/images/posts/davincivskdenlive/resolve.jpg)
 
 <figcaption>Davinci Resolve is a powerful video editor</figcaption>
 </figure>
 
 For most of the life of the channel, I’ve used Kdenlive to edit my videos. I started the first few ones with Pitivi, which is great as well, but I wanted to use something that had a bit more possibilities, and try to step up my game. Kdenlive felt right for this. It has a bit of a learning curve, and getting it to run without crashing can be a hassle (hint: use the flatpak version), but it offers a lot. In terms of effects, whether audio or video, in terms of available transitions (through custom wipes), and compositing, and now with a much better tool to handle audio levels, it’s a fantastic open source tool. I liked it so much that I even made a few tutorial videos to show people it’s actually a great piece of software.
 
-INSERT TUTORIAL VIDEOS HERE
+<p align="center"><iframe style="width:75%;height:300px;" src="https://www.youtube.com/embed/LEnJcB03Bb4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
 Still, after about 2 years, it felt like it was time to try something new. Davinci Resolve was making bedroom eyes at me from the corner of the room, and since I now have an Nvidia GPU, I though it could be a good time to try my hand at it.
 
@@ -54,7 +54,7 @@ All these little issues decided me to go give Resolve a try. And it was… inter
 
 ![Davinci Resolve Manuals](/images/posts/davincivskdenlive/manuals.png)
 
-<figcaption>Resolve has huge comprehensive manuals, but they're a very long read</figcaption>
+<figcaption>More than 400 pages, and that's just manual 1 out of 5</figcaption>
 </figure>
 
 Davinci Resolve is free, but not open source. It’s a pro tool, used in Hollywood and by many video editing professionals. This was an important factor for me: I also wanted to learn some skills I could transfer to the real world if I ever decided to let go of the channel, or to focus on these skills as a day job. Davinci Resolve is temperamental on Linux, though. It seems it only works fine with Nvidia GPUs, and AMD ones if you install the pro driver. Intel cards are not supported at the moment, and even with the "right" GPU, you still can have issues.
@@ -75,7 +75,7 @@ I managed to cajole OBS into recording footage in formats that Resolve uses out 
 
 ![Huge Files](/images/posts/davincivskdenlive/files.png)
 
-<figcaption>Resolve uses formats that use up a ton of space</figcaption>
+<figcaption>500Mb for a 36 seconds video</figcaption>
 </figure>
 
 Once you actually manage to get your footage in the program, though, editing was pretty simple. You just use it as you would any other video editor, set in and out points, drag your clips to the timeline, add transitions, titles, and other stuff, and hit render.
