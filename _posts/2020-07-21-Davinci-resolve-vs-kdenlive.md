@@ -20,7 +20,7 @@ hidden: true
 
 For most of the life of the channel, I’ve used Kdenlive to edit my videos. I started the first few ones with Pitivi, which is great as well, but I wanted to use something that had a bit more possibilities, and try to step up my game. Kdenlive felt right for this. It has a bit of a learning curve, and getting it to run without crashing can be a hassle (hint: use the flatpak version), but it offers a lot. In terms of effects, whether audio or video, in terms of available transitions (through custom wipes), and compositing, and now with a much better tool to handle audio levels, it’s a fantastic open source tool. I liked it so much that I even made a few tutorial videos to show people it’s actually a great piece of software.
 
-<p align="center"><iframe style="width:75%;height:300px;" src="https://www.youtube.com/embed/LEnJcB03Bb4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<p align="center"><iframe style="width:75%;height:300px;" src="https://www.youtube.com/embed/FBwCTMBPCZ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
 Still, after about 2 years, it felt like it was time to try something new. Davinci Resolve was making bedroom eyes at me from the corner of the room, and since I now have an Nvidia GPU, I though it could be a good time to try my hand at it.
 
