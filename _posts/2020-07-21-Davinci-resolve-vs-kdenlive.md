@@ -6,7 +6,6 @@ image: /images/posts/davincivskdenlive/header.png
 tags:
   - Personal
   - Video Editing
-  - embargo
   
 hidden: true
 date: 2020-07-21
