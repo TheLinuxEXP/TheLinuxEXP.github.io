@@ -13,15 +13,15 @@ body {
 
 /* Div that contains the carousal */
 .top-container {
-  width: 80%;
+  width: 50%;
 }
 
 /* positioning for left button of carousal */
 .carousel-control-prev {
-  left: -5%;
+  left: +5%;
 }
 
 /* positioning for right button of carousal */
 .carousel-control-next {
-  right: -5%;
+  right: 5%;
 }
