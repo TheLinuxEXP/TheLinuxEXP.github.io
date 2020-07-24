@@ -1,0 +1,27 @@
+#container {
+  width: 60rem;
+  height: auto;
+  overflow: auto;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+body {
+  text-align: center;
+  background-color: coral;
+}
+
+/* Div that contains the carousal */
+.top-container {
+  width: 80%;
+}
+
+/* positioning for left button of carousal */
+.carousel-control-prev {
+  left: -15%;
+}
+
+/* positioning for right button of carousal */
+.carousel-control-next {
+  right: -15%;
+}
