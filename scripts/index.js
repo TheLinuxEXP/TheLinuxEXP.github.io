@@ -1,7 +1,7 @@
 const channelID = "UC5UAwBUum7CPN5buc-_N1Fw"
 
 //if the following max videos size is changed then also create more carousal items in the html page 
-const maxVideos = 3
+const maxVideos = 4
 
 //the following API_key is linked with my account but set as public api key
 const API_key = "AIzaSyA62eqDWrTX1SSnzYcrcwMwIqb8HQYUcZ0"
@@ -44,6 +44,7 @@ $(document).ready(function () {
                 $(".first-video").attr('src', videoLinks[0]);
                 $(".second-video").attr('src', videoLinks[1]);
                 $(".third-video").attr('src', videoLinks[2]);
+                $(".fourth-video").attr('src', videoLinks[3]);
             }
         )
     }
