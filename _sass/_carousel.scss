@@ -1,16 +1,9 @@
 #container {
-  width: 40rem;
+  width: 50rem;
   height: auto;
   overflow: auto;
   padding: 15px;
   margin: 0 auto;
-}
-
-.container-fluid {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 /* Div that contains the carousal */
@@ -27,6 +20,15 @@
 .carousel-control-next {
   right: 5%;
 }
+
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 
 .carousel {
   position: relative;
