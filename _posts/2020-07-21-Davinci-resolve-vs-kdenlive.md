@@ -7,7 +7,7 @@ tags:
   - Personal
   - Video Editing
   
-hidden: true
+hidden: false
 ---
 
 
