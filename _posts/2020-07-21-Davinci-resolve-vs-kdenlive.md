@@ -22,7 +22,7 @@ For most of the life of the channel, I’ve used Kdenlive to edit my videos. I s
 
 <p align="center"><iframe style="width:75%;height:300px;" src="https://www.youtube.com/embed/FBwCTMBPCZ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
-Still, after about 2 years, it felt like it was time to try something new. Davinci Resolve was making bedroom eyes at me from the corner of the room, and since I now have an Nvidia GPU, I though it could be a good time to try my hand at it.
+Still, after about 2 years, it felt like it was time to try something new. Davinci Resolve was making bedroom eyes at me from the corner of the room, and since I now have an Nvidia GPU, I thought it could be a good time to try my hand at it.
 
 I used it for one full video, and I created many mini projects in it to try and reproduce stuff I could do easily in Kdenlive. Here is my opinion on both tools.
 
@@ -36,7 +36,7 @@ I used it for one full video, and I created many mini projects in it to try and 
 </figure>
 
 
-Why did I feel I needed to try something else than Kdenlive? The main reason is performance. Kdenlive is powerful, but it doesn’t use your GPU, at all. Not for previewing your video, not for rendering. It only taxes your CPU, and it makes it really hard to use in some cases. I usually overlay quite a bit of stuff on top of my footage, like images, incrustations, text, or icons, and these things add up in terms of performance. They add up so much, in fact, that the preview becomes virtually unusable when I have 4 to 5 elements at the same time on screen. Even with proxy clips, it’s just not practical to have your video previewsing at a few FPS. You’re missing the little details, the timing problems you should correct, and it makes the editing process a bit of a trial and error game.
+Why did I feel I needed to try something else than Kdenlive? The main reason is performance. Kdenlive is powerful, but it doesn’t use your GPU, at all. Not for previewing your video, not for rendering. It only taxes your CPU, and it makes it really hard to use in some cases. I usually overlay quite a bit of stuff on top of my footage, like images, incrustations, text, or icons, and these things add up in terms of performance. They add up so much, in fact, that the preview becomes virtually unusable when I have 4 to 5 elements at the same time on screen. Even with proxy clips, it’s just not practical to have your video previewing at a few FPS. You’re missing the little details, the timing problems you should correct, and it makes the editing process a bit of a trial and error game.
 
 Second problem: Kdenlive isn’t very extensible. While you can add your own title templates, or image based wipes, you can’t add custom transitions. More mainstream video editors usually have a plugin system that allows users to add dynamic transitions, or 3D or animated titles. Kdenlive doesn’t have such features. Its titling tool is barebones (it handles text or images, and simple title movement, but not specific animation of any object), and while you can create your own transitions and movements using the transform, blur, or rotate effects, you can only save these effects one by one and not the whole effect stack applied to an item, it means you have to use multiple clicks to reproduce an effect you created.
 
@@ -44,7 +44,7 @@ For example, if I want to create my "Linux, Open Source and Privacy News" title 
 
 This is a bit annoying, to be honest, since it makes you lose a ton of time redoing the same things.
 
-The final point, though, is bugs. While I seem to have a pretty stellar experience with Kdenlive compared to other users, I still encounter some bugs. The most annoying, and the one that decided me to try something else? Rendering my videos created files without any sound for an arbitrary period, going from 10 to 45 seconds. It made me re-render the same video over and over, until I either escaped the bug somehow, or until I had left enough empty space on my tracks that the bug didn’t impact the “real” video audio. I then had to cut out the empty part before uploading. There is also an issue where zooming in and out of the timeline hides clips after you’ve cut them, and the titling tool now uses a weird resolution when trying to preview the background for placing a title, so it makes it impossible to place titles correctly.
+The final point, though, is bugs. While I seem to have a pretty stellar experience with Kdenlive compared to other users, I still encounter some bugs. The most annoying, and the one that convinced me to try something else? Rendering my videos created files without any sound for an arbitrary period, going from 10 to 45 seconds. It made me re-render the same video over and over, until I either escaped the bug somehow, or until I had left enough empty space on my tracks that the bug didn’t impact the “real” video audio. I then had to cut out the empty part before uploading. There is also an issue where zooming in and out of the timeline hides clips after you’ve cut them, and the titling tool now uses a weird resolution when trying to preview the background for placing a title, so it makes it impossible to place titles correctly.
 
 All these little issues decided me to go give Resolve a try. And it was… interesting.
 
