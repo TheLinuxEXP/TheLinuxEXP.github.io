@@ -30,7 +30,7 @@ If you want to see a video form of that article, here it is, if not, read on!
 Ok, the first thing that comes often first is the fact that Ubuntu spies on its users. This complaint usually is linked to 2 Ubuntu features: the Amazon web app, and the opt-out system information.
 Ubuntu introduced an integration with Amazon when they started shipping Unity as a default desktop environment, and later, they added a reporting tool that collects sytem information and sends it back to Ubuntu to check on what their users are actually using hardware wise.
 
-THe Amazon thing was bad. It sent unencrypted search requests to Amazon, for anything the users were looking for in the Unity dash, and it generally returned very bad results. Ubuntu actually enabled users to disable that feature a little later, and in the end, that Amazon integration turned into an affiliate link in the dash, that could be removed easily, and not used. Still, the community generally resented the distro for adding this by default.
+The Amazon thing was bad. It sent unencrypted search requests to Amazon, for anything the users were looking for in the Unity dash, and it generally returned very bad results. Ubuntu actually allowed users to disable that feature a little later, and in the end, that Amazon integration turned into an affiliate link in the dash, that could be removed easily, and not used. Still, the community generally resented the distro for adding this by default.
 
 <figure markdown="1">
 
@@ -41,7 +41,7 @@ THe Amazon thing was bad. It sent unencrypted search requests to Amazon, for any
 
 I can understand that, since no one really wants ads in their software, but the goal here was monetization. Ubuntu is backed by Canonical, a company that, at the time, depended largely on Mark Shuttleworth for revenue. If that company wanted to keep existing for a bit longer, they needed to earn some money. This is probably not the happiest move they've made, but since this has been removed entirely from the current versions of the distro, I don't think people should hold that against them anymore.
 
-Then there's the data collection. Ubuntu asks their users if they want to DISABLE the data collection after install, meaning that it's turned on by default. THis created outrage in the Linux community, arguing that Ubuntu had become spyware. Now, this is complete nonsense.
+Then there's the data collection. Ubuntu asks their users if they want to DISABLE the data collection after install, meaning that it's turned on by default. This created outrage in the Linux community, arguing that Ubuntu had become spyware. Now, this is complete nonsense.
 
 <figure markdown="1">
 
@@ -50,9 +50,9 @@ Then there's the data collection. Ubuntu asks their users if they want to DISABL
 <figcaption>The data collection tool shows up at first boot.</figcaption>
 </figure>
 
-First, Ubuntu gives users an example of the data they collect: it's just hardware configs, nothing personal is sent or kept. It's less info than what the Steam user survey collects, and the goal here is to help Ubuntu tailor the experience for their users, looking at what hardware they use. SUre, it would have been better to make that data collection opt-in instead of opt-out, but that's what KDE Plasma has done, and they still took a lot of flak for it, even though it's entirely DISABLED by default.
+First, Ubuntu gives users an example of the data they collect: it's just hardware configs, nothing personal is sent or kept. It's less info than what the Steam user survey collects, and the goal here is to help Ubuntu tailor the experience for their users, looking at what hardware they use. Sure, it would have been better to make that data collection opt-in instead of opt-out, but that's what KDE Plasma has done, and they still took a lot of flak for it, even though it's entirely disabled by default.
 
-The linux community is very privacy sensitive, and they don't take too kindly on any form of data collection, voluntary or not. I still feel the outrage has been overblown on this one, but to each their own.
+The linux community is very privacy sensitive, and they don't take too kindly to any form of data collection, voluntary or not. I still feel the outrage has been overblown on this one, but to each their own.
 
 ### Unity and Mir
 
@@ -77,7 +77,7 @@ Unity, on the other hand, was created because GNOME 3, at the time, was such a h
 
 Ubuntu didn't want to break all of their user's workflow, and so they worked on something that users would be more familiar with, and added their own spin on things, with the dash, allowing users to search through the entire system, a dock, and a global menu bar.
 
-THese two projects are often criticized as unnecessary, and as having hurt the development of competing initiatives. The problem here is that Ubuntu has a vision that differed from what the other projects had in mind, and these couldn't be reconciled, so they had to go their own way, or ditch what they felt the desktop should look like, or their plans for convergence. 
+These two projects are often criticized as unnecessary, and as having hurt the development of competing initiatives. The problem here is that Ubuntu has a vision that differed from what the other projects had in mind, and these couldn't be reconciled, so they had to go their own way, or ditch what they felt the desktop should look like, or their plans for convergence. 
 
 Problem is, these 2 projects were basically abandoned later, or at least transfered to the community. Mir, because Canonical just didn't achieve its vision for convergence, and Unity, because GNOME 3 got to the point where it actually became usable by anyone, and maintaining a whole separate desktop environment meant for convergence, when the convergence thing was dead in the water didn't make much sense.
 
@@ -115,7 +115,7 @@ There are other reasons, less often expressed, for the hate Ubuntu receives. Ubu
 
 The Linux community tends to like being edgy users, that use stuff that normies don't know about, or wouldn't use. Ubuntu has crossed that threshold for some time now. Ubuntu also is very noob friendly. They ship drivers by default, even proprietary ones, they tend to provide utilities for most beginners to get around to use their system and not have to discover everything by themselves. This is actually what made them that big in the beginning: they took the Linux desktop and tweaked it in a way that made users that didn't know anything about Linux capable of using it.
 
-THis is also resented by a fringe of the Linux community that feels Linux is a "hacker" system, something for technical people, and they don't want to use a "noob friendly" system. THe "start with ubuntu the move to arch" meme is still alive, and still complete BS. Ubuntu is a perfectly fine distro for beginners, and technical users as well.
+This is also resented by a fringe of the Linux community that feels Linux is a "hacker" system, something for technical people, and they don't want to use a "noob friendly" system. The "start with ubuntu the move to arch" meme is still alive, and still complete BS. Ubuntu is a perfectly fine distro for beginners, and technical users as well.
 
 The corporate backing is probably the last reason Ubuntu gets so much hate. Ubuntu is backed by Canonical, and as such, is not a purely community ran distro. Some people don't like that, they don't want companies intervening in the open source community, they dislike anything corporate. That's a valid point of view, but that's also a bit short sighted: when your distro reaches mass appeal, and starts making a bit of money, off of donations, or contracts with institutions to provide support for them, then they NEED a structure to handle that.
 
