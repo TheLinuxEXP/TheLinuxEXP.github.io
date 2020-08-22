@@ -8,7 +8,6 @@ tags:
   - Ubuntu
   - Video Companion
 
-hidden: true
 ---
 
 
