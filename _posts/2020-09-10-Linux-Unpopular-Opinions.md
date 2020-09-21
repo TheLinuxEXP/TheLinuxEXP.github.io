@@ -2,7 +2,7 @@
 title:  "7 Unpopular Opinions about Linux"
 description: "There are things you should keep to yourself, and things you shouldn't. No idea where this falls."
 author: nick
-image: /images/posts/unpopular-opinions/header.jpg
+image: /images/posts/unpopular-opinions/thumb.jpg
 tags:
   - Linux
   - Open Source
