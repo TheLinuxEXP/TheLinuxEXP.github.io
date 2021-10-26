@@ -166,7 +166,7 @@ I've seen Marco Trevinho from ubuntu-desktop team and Alexander and Chris from G
 
 <figure markdown="1">
 
-![Christian Schaller](/images/posts/itwtranscripts/schaller.jpg)
+![Christian Schaller](/images/posts/itwtranscripts/schaller.png)
 
 <figcaption>Christian Schaller, Director for Desktop at Red Hat</figcaption>
 </figure>
@@ -211,7 +211,7 @@ As mentioned we have Allan Day constantly engaged upstream to talk to other part
 
 <figure markdown="1">
 
-![Cassidy Blaede](/images/posts/itwtranscripts/cassidy.jpg)
+![Cassidy Blaede](/images/posts/itwtranscripts/cassidy.png)
 
 <figcaption>Cassidy Blaede, Co-Founder of elementary</figcaption>
 </figure>
