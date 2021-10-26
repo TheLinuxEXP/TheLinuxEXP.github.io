@@ -27,7 +27,7 @@ Also to note: I wanted to get even more viewpoints, from people who had been cri
 ![Alexander Mikhaylenko](/images/posts/itwtranscripts/AM.png)
 ![Chris Davis](/images/posts/itwtranscripts/chrisdavis.png)
 
-<figcaption>Alexander Mikhaylenko and Chris Davis, the 2 GNOME contributors who ansered my questions</figcaption>
+<figcaption>Alexander Mikhaylenko (no pic available AFAIK) and Chris Davis, the GNOME contributors who answered my questions</figcaption>
 </figure>
 
 
@@ -37,7 +37,7 @@ The conversation started with GNOME team members, namely Alexander Mikhaylenko, 
 
 **The recent moves with the much improved GNOME Software and the use of libadwaita as the main "GNOME library" make me think that GNOME wants to be more than just a desktop, a collection of applications and panels, and lean more towards being a platform that developers intentionally target. Am I in the wrong?**
 
-That's somewhat correct, though perspectives within GNOME can vary - I think most of us want GNOME to be a stable platform that developers can target, and to have a solid foundational experience for users out of the box.
+```That's somewhat correct, though perspectives within GNOME can vary - I think most of us want GNOME to be a stable platform that developers can target, and to have a solid foundational experience for users out of the box.```
 
 
 **Are there other moves that we can expect to help solidify GNOME as a stable developer platform?**
