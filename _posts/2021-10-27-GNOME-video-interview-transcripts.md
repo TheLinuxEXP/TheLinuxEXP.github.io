@@ -9,6 +9,7 @@ tags:
   - Companion
   
 hidden: true
+date: 2021-10-27
 
 ---
 
@@ -22,7 +23,6 @@ But first, you should definitely watch the video!
 ## Discussion with GNOME team members
 
 The conversation started with GNOME team members, namely Alexander Mikhailenko, who also double-checked the answers with Chris Davies. Here are the questions and answers:
-
 
 
 **The recent moves with the much improved GNOME Software and the use of libadwaita as the main "GNOME library" make me think that GNOME wants to be more than just a desktop, a collection of applications and panels, and lean more towards being a platform that developers intentionally target. Am I in the wrong?**
