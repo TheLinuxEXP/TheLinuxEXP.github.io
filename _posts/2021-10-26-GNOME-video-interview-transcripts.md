@@ -7,7 +7,6 @@ tags:
   - Linux
   - Open Source
   - Companion
-hidden: true
 date: 2021-10-26
 ---
 
