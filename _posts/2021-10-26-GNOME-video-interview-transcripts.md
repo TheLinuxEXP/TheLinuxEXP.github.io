@@ -158,6 +158,8 @@ With GTK-3 we have quite a number of tweaks on top of Adwaita to make it look Ya
 
 I've seen Marco Trevinho from ubuntu-desktop team and Alexander and Chris from GNOME involved with the discussions of API for accents and palettes on libadwaita's matrix channel. Just search Trevinho/ubuntu/yaru on [Matrix](https://matrix.to/#/#libadwaita:gnome.org?via=gnome.org) for exact discussions and re-coloring per app-basis.
 
+<hr />
+
 ## Conversation with Fedora
 
 
