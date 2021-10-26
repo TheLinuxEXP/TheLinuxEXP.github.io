@@ -19,6 +19,8 @@ But first, you should definitely watch the video!
 
 Also to note: I wanted to get even more viewpoints, from people who had been critical of this move to libadwaita, including Jeremy Soller, from System76 and PopOS, and Joshua Strobl, who works on Solus, but they declined to comment, as they felt they had already stated their views. I respect that 100%, but I just wanted to mention it here, to fend off the "why didn't you talk to X" comments :) 
 
+<hr />
+
 ## Discussion with GNOME team members
 
 
@@ -121,6 +123,7 @@ I think I've already answered it in 5.
 
 If an app wants to use certain colors, that's final - see 6. for what happens when it's not the case. Any settings or vendor API would only change defaults, which apps can then additionally override.
 
+<hr />
 
 ## Conversation with an anonymous Yaru Contributor
 
@@ -204,6 +207,8 @@ We are probably not the best OS to ask about the coloring API since we as mentio
 
 As mentioned we have Allan Day constantly engaged upstream to talk to other parts of the design team and ensure our needs are met. One has to remember that a lot of major changes in GNOME is driven by one distribution or other, who has a feature/they want/need and then provide the engineering resources to do so. So usually the discussion we have is not with 'GNOME', but with other stakeholders about how their needs and requirements can be resolved without hurting our needs and requirements. And usually people are amendable to such discussions, especially if you are willing to work with them to make the needed adjustments, what tends to fall down is if you just try to put more work onto someone else for a feature they are not personally or their employer isn't especially interested in. This is especially true for something net new like libadwaita, where from what I understand the two main authors have been very open to accommodating requests for things like the coloring API, but also made it clear that they don't have the bandwidth to personally implement it, but patches are welcome.
 
+<hr />
+
 ## Discussion with elementary OS
 
 
@@ -273,3 +278,5 @@ I think my answer here is partially covered in the above answer as well. But mor
 **elementary OS has always been focused on the user experience. Could that move in favor of app developers result in a less coherent experience for users, with desktops made of apps themed by the distribution, apps built for elementary OS, apps built for GNOME, all with their own HIG, theme, and look and feel?**
 
 I think this is also pretty well covered earlier, but yes, it can and has resulted in a less consistent experience on a surface level. But that's not new, and not solved by anything to do with theming; it's a result of having different interoperable platforms. The only way to solve this is to make "desktop Linux" a singular platform with a single set of Human Interface Guidelines and a single toolkit and a single stylesheet and a single desktop and... yeah, I don't think we want that, either!
+
+<hr />
