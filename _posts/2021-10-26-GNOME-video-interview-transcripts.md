@@ -11,15 +11,26 @@ hidden: true
 date: 2021-10-26
 ---
 
-I just published a video detailing the facts about GNOME's transition to become a platform, the move to libadwaita, and the impacts on GTK, on GNOME, on GTK-based desktops, and on theming. THis video was made thanks to a few questions I asked a bunch of people in the Linux community, including people working on GNOME, on elementary OS, on Fedora, or on the Yaru theme. Of course, I couldn't include all their answers in the video, so here are the transcripts of the conversations I had with them, so you can get more information.
+I just published a video detailing the facts about GNOME's transition to become a platform, the move to libadwaita, and the impacts on GTK, on GNOME, on GTK-based desktops, and on theming. This video was made thanks to a few questions I asked a bunch of people in the Linux community, including people working on GNOME, on elementary OS, on Fedora, or on the Yaru theme. Of course, I couldn't include all their answers in the video, so here are the transcripts of the conversations I had with them, so you can get more information.
 
 But first, you should definitely watch the video!
 
 <p align="center"><iframe style="width:75%;height:300px;" src="https://www.youtube.com/embed/Pdx_MwcMtnM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
-Also to note: I wanted to get even more viewpoints, from people who had been penly critical of this move to libadwaita, including Jeremy Soller, from System76 and PopOS, and Joshua Strobl, who works on Solus, but they declined to comment, as they felt they had already stated their views. I respect that 100%, but I just wanted to mention it here, to fend off the "why didn't you talk to X" comments :) 
+Also to note: I wanted to get even more viewpoints, from people who had been critical of this move to libadwaita, including Jeremy Soller, from System76 and PopOS, and Joshua Strobl, who works on Solus, but they declined to comment, as they felt they had already stated their views. I respect that 100%, but I just wanted to mention it here, to fend off the "why didn't you talk to X" comments :) 
 
 ## Discussion with GNOME team members
+
+
+<figure class="half" markdown="1">
+
+![Alexander Mikhaylenko](/images/posts/itwtranscripts/AM.png)
+![Chris Davis](/images/posts/itwtranscripts/chrisdavis.png)
+
+<figcaption>Alexander Mikhaylenko and Chris Davis, the 2 GNOME contributors who ansered my questions</figcaption>
+</figure>
+
+
 
 The conversation started with GNOME team members, namely Alexander Mikhaylenko, who also double-checked the answers with Chris Davis. Here are the questions and answers:
 
@@ -37,23 +48,34 @@ Might be too broad - I mean there are so many different things people work on - 
 **Interoperability has long been a staple of Linux desktops. Is that focus towards being a more stable platform going to affect that interoperability with apps from other desktops, or is it going to help make it better?**
 
 I think we can definitely work toward interoperability while still moving toward GNOME as a stable platform. For example, we can work on initiatives like a global dark style preference via cross-desktop components like the Freedesktop portals. It's not one or the other - a lot of what we need to do to have a stable platform for GNOME can lay the foundations for multiple stable platforms on a solid base.
+
+
 This of course depends on what you call interoperability - for example, take GNOME and elementary. If you expect being able to run GNOME apps on elementary and the other way without breaking them - yes, it's getting better in this regard.
 If you're expecting GNOME apps to look like elementary apps or the other way - then no - it doesn't work this way and I mean there's a good reason so many elementary apps are already hardcoding theme so it doesn't just fall apart on GNOME.
 
 
 **GNOME will be moving all the "GNOME HIG related stuff" including the Adwaita theme, to libadwaita. What are the benefits of this move for Developers? for GNOME? For GNOME users?**
 
-For app developers it means that you have a well defined target for developing apps. Historically this has been a bit all over the place. But here you have a single library - in line with the HIG, providing widgets implementing it, styles it mentions in one package. You don't need to think - ok HIG mentions this cool pattern, now how do I actually do that and find out that GTK has no widget for it, maybe there's a style class in Adwaita, though it seems broken in GTK4, but some another app implemented something similar 4 years ago, maybe you can copy-paste that and port it to GTK4 and whatever programming language you use if it's different - libadwaita avoids that kind of stuff.
+For app developers it means that you have a well defined target for developing apps. Historically this has been a bit all over the place. But here you have a single library - in line with the HIG, providing widgets implementing it, styles it mentions in one package.
 
-For GNOME it means that we can iterate on the look and feel faster and in a more cohesive way. Previously when we wanted to change the look of GNOME, we had to change the default look of GTK - but we are not the only consumers of GTK. The same went for widgetry - when we wanted a new design pattern, often it needed to be implemented in GTK or someone else made a library for it. Thus, we had a conflict between the stability needs of GTK and the design goals we had for GNOME applications. GTK also moves very slowly - and for the past few years GTK3 has been frozen with no new features being added to it. Meanwhile, if GNOME needs some additions - well you can't have that.
+You don't need to think - ok HIG mentions this cool pattern, now how do I actually do that and find out that GTK has no widget for it, maybe there's a style class in Adwaita, though it seems broken in GTK4, but some another app implemented something similar 4 years ago, maybe you can copy-paste that and port it to GTK4 and whatever programming language you use if it's different - libadwaita avoids that kind of stuff.
 
-For users it means multiple things. GTK4 itself is more neutral - e.g. right now elementary hacks around message dialog layouts to make them less GNOME-like and more elementary-like - I mean that's just not ok. Now we can put GNOME-specific widgets like that in libadwaita and leave GTK alone so it's more neutral. Inside GNOME you get better and more consistent apps. Look at Settings and how it has million different list row styles, sometimes different within the same page. This directly ties to what I've mentioned wrt developer experience - if apps are forced to do custom stuff, they will, and there will be no consistency whatsoever.
+For GNOME it means that we can iterate on the look and feel faster and in a more cohesive way. Previously when we wanted to change the look of GNOME, we had to change the default look of GTK - but we are not the only consumers of GTK.
+
+The same went for widgetry - when we wanted a new design pattern, often it needed to be implemented in GTK or someone else made a library for it. Thus, we had a conflict between the stability needs of GTK and the design goals we had for GNOME applications. GTK also moves very slowly - and for the past few years GTK3 has been frozen with no new features being added to it. Meanwhile, if GNOME needs some additions - well you can't have that.
+
+For users it means multiple things. GTK4 itself is more neutral - e.g. right now elementary hacks around message dialog layouts to make them less GNOME-like and more elementary-like - I mean that's just not ok.
+
+Now we can put GNOME-specific widgets like that in libadwaita and leave GTK alone so it's more neutral. Inside GNOME you get better and more consistent apps. Look at Settings and how it has million different list row styles, sometimes different within the same page. This directly ties to what I've mentioned wrt developer experience - if apps are forced to do custom stuff, they will, and there will be no consistency whatsoever.
 
 
 **We often hear that this move marks the death of theming on GNOME, that no themes will ever work again. Is there any truth to that, will it prevent users and distributions to apply themes to their GNOME desktop?**
 
-Theming as we know it for GTK apps is not going to be supported by libadwaita. It's highly unlikely we'll have any API for loading arbitrary stylesheets. That said, there are things that we're having discussion about going forward. To be perfectly clear here: nothing is set in stone, so don't rely on anything happening, but: there have been talks of supporting different accent colors on a system level. We're also planning to work with Canonical on leveraging our planned recoloring support into an API for vendors to set specific colors. And - there are at least 2 more ways to sideload a theme anyway, they are just more clearly unsupported.
+Theming as we know it for GTK apps is not going to be supported by libadwaita. It's highly unlikely we'll have any API for loading arbitrary stylesheets.
 
+That said, there are things that we're having discussion about going forward. To be perfectly clear here: nothing is set in stone, so don't rely on anything happening, but: there have been talks of supporting different accent colors on a system level.
+
+We're also planning to work with Canonical on leveraging our planned recoloring support into an API for vendors to set specific colors. And - there are at least 2 more ways to sideload a theme anyway, they are just more clearly unsupported.
 
 
 **The GNOME project has always been pretty clear about themes: they're not a supported feature since GTK3, and their current implementation is considered a hack. Can you explain the technical reason for that, in simple terms?**
@@ -87,14 +109,14 @@ In other words, As Danielle put it earlier in a tweet, they are CSS frameworks m
 
 **Other desktops manage to handle theming, seemingly without issues, for example KDE. What is the difference that prevents GTK or GNOME to follow in these footsteps?**
 
-It breaks too - like last time I tried it I switched to a different theme and dark color scheme and got a dark on dark scrollbar in Konsole, light text on light toolbar, white on light orange Updates row in Discover, clipped titles in system settings. And another thing is - anything even remotely custom doesn't follow themes - for example, cards in Discover or system monitor, sidebar in system settings. It doesn't mean KDE is bad - but I think the claims that it doesn't break with theming are downplaying issues is well.
+It breaks too - like last time I tried it I switched to a different theme and dark color scheme and got a dark on dark scrollbar in Konsole, light text on light toolbar, white on light orange Updates row in Discover, clipped titles in system settings.
 
+And another thing is - anything even remotely custom doesn't follow themes - for example, cards in Discover or system monitor, sidebar in system settings. It doesn't mean KDE is bad - but I think the claims that it doesn't break with theming are downplaying issues is well.
 
 
 **What are the solutions that could be worked on to allow distributions and users to still retain some control over how GNOME looks? I'm thinking about the coloring API specifically.**
 
 I think I've already answered it in 5.
-
 
 
 **Developers can decide to stick to default Adwaita for their applications. Would a coloring API allow to bypass that, or would the colors set by the users or the distro be ignored in that case ?**
@@ -104,11 +126,21 @@ If an app wants to use certain colors, that's final - see 6. for what happens wh
 
 ## Conversation with an anonymous Yaru Contributor
 
+
+<figure markdown="1">
+
+![The Yaru Theme](/images/posts/itwtranscripts/yaru.jpg)
+
+<figcaption>The recently-ditched Yaru mixed theme</figcaption>
+</figure>
+
 I then got a bit of information from someone working on the Yaru theme, but this person preferred staying anonymous, so I won't provide their name here, as in the video. Here is what we talked about:
 
 **GNOME decided to split all the HIG-related stuff from GTK into libadwaita. We often hear that this means the end of distro and user theming. What are the impacts for Ubuntu and Yaru?**
 
-I've had chance to play and mess around with the widget-set provided by libadwaita, it's a wonderful addition to GTK4. It really makes it very easy for app-developers to build with GTK. The thing about it being end of distro and user theming is a conclusion derived on the current state of libadwaita. It's in alpha state and many of the features are being actively worked and developed. Currently the main priority/focus of libadwaita is to land proper support for universal dark preference for GNOME 42. I can't say what ubuntu-desktop will do regarding this but I can confidently share that Yaru is 100% compatible with libadwaita/GTK4 especially now that we dropped the mixed-theme.
+I've had chance to play and mess around with the widget-set provided by libadwaita, it's a wonderful addition to GTK4. It really makes it very easy for app-developers to build with GTK. The thing about it being end of distro and user theming is a conclusion derived on the current state of libadwaita.
+
+It's in alpha state and many of the features are being actively worked and developed. Currently the main priority/focus of libadwaita is to land proper support for universal dark preference for GNOME 42. I can't say what ubuntu-desktop will do regarding this but I can confidently share that Yaru is 100% compatible with libadwaita/GTK4 especially now that we dropped the mixed-theme.
 
 Yaru is 100% compatible with libadwaita/GTK4 beacuse for every minor change made on libadwaita's master branch an automatic pull-request is generated to Yaru which we review and apply on Yaru's master branch.
 
@@ -131,14 +163,26 @@ I've seen Marco Trevinho from ubuntu-desktop team and Alexander and Chris from G
 
 ## Conversation with Fedora
 
+
+<figure markdown="1">
+
+![Christian Schaller](/images/posts/itwtranscripts/schaller.jpg)
+
+<figcaption>Christian Schaller, Director for Desktop at Red Hat</figcaption>
+</figure>
+
 I also neeeded the point of view from someone who worked on a distro that shipped GNOME in an unmodified way, and so Fedora came to mind. Christian Schaller, the Director for Desktop at Red hat, agreed to answer my questions:
 
 
 **It looks, to me at least, that GNOME wants to be more than just a desktop that you can stack on a top of a distribution. It feels like GNOME is working towards being a complete platform, that developers target intentionally, and that doesn't get modified as much as it can be right now.  Maybe something more akin to how elementary OS works, where you can't really ship Pantheon any other way than how it is on elementary OS. Do you share that opinion? Is that something that could impact Fedora and/or other distributions?**
 
 
-So first question about GNOME wanting to be more than a desktop you stack on top of a distribution, I think that is true in the sense that it has been a long held belief in the GNOME community that you can not make a great desktop if you theat your desktop operating system as a layer cake. If you read my blog post from 2014 when we where kicking of the Fedora Workstation effort I actually talk a lot about this https://blogs.gnome.org/uraeus/2014/04/16/preparing-the-ground-for-the-fedora-workstation/
- and I also mention this talk done all the way back in 2001 by Jim Gettys, a talk which I think influenced the thinking about these issues ever since. So can this be a challenge for distributions? It definitely can be as it means that the desktop will have expectations on your system as a whole and if you want to go a different way it might take quite a bit of work. In Fedora we do relatively few downstream changes to GNOME, instead we focus on getting our features and enhancements upstreamed right away and at the same time we take part in the upstream discussions about the pathway to take to try to keep upstream from at least not taking decisions that are directly adverse to our needs, but at the same time allow the upstream to retain its independence.
+So first question about GNOME wanting to be more than a desktop you stack on top of a distribution, I think that is true in the sense that it has been a long held belief in the GNOME community that you can not make a great desktop if you theat your desktop operating system as a layer cake.
+
+If you read my blog post from 2014 when we where kicking of the Fedora Workstation effort I actually talk a lot about this https://blogs.gnome.org/uraeus/2014/04/16/preparing-the-ground-for-the-fedora-workstation/
+ and I also mention this talk done all the way back in 2001 by Jim Gettys, a talk which I think influenced the thinking about these issues ever since.
+ 
+ So can this be a challenge for distributions? It definitely can be as it means that the desktop will have expectations on your system as a whole and if you want to go a different way it might take quite a bit of work. In Fedora we do relatively few downstream changes to GNOME, instead we focus on getting our features and enhancements upstreamed right away and at the same time we take part in the upstream discussions about the pathway to take to try to keep upstream from at least not taking decisions that are directly adverse to our needs, but at the same time allow the upstream to retain its independence.
  
 
 **GNOME decided to split all the HIG-related stuff from GTK into libadwaita. We often hear that this means the end of distro and user theming. What are the impacts for Fedora? For distributions that ship a customized version of GNOME?**
@@ -157,12 +201,20 @@ As for theming and branding and its importance for a distribution. This is a goo
 
 We are probably not the best OS to ask about the coloring API since we as mentioned doesn't do a lot of custom theming, but in general I have to say that the right approach to these things if you are a distribution to be actively involved both on the design and code side upstream yourself. For instance in Fedora Workstation we have Allan Day involved as our upstream designer who then keeps an eye out for important changes being discussed. And when there are things coming up where we are worried about a change impacting us negatively we ensure to have both Allan active representing our needs in the design discussion, but also offer to help on the coding side to adjust the solution to also work for us. The one thing that never works in open source is to sit back and expect other people to do your work for you.
 
-**Did you, or any other distribution, offer to discuss another solution with GNOME? Something like "validated themes"? Something else? **
+**Did you, or any other distribution, offer to discuss another solution with GNOME? Something like "validated themes"? Something else?**
 
 
 As mentioned we have Allan Day constantly engaged upstream to talk to other parts of the design team and ensure our needs are met. One has to remember that a lot of major changes in GNOME is driven by one distribution or other, who has a feature/they want/need and then provide the engineering resources to do so. So usually the discussion we have is not with 'GNOME', but with other stakeholders about how their needs and requirements can be resolved without hurting our needs and requirements. And usually people are amendable to such discussions, especially if you are willing to work with them to make the needed adjustments, what tends to fall down is if you just try to put more work onto someone else for a feature they are not personally or their employer isn't especially interested in. This is especially true for something net new like libadwaita, where from what I understand the two main authors have been very open to accommodating requests for things like the coloring API, but also made it clear that they don't have the bandwidth to personally implement it, but patches are welcome.
 
 ## Discussion with elementary OS
+
+
+<figure markdown="1">
+
+![Cassidy Blaede](/images/posts/itwtranscripts/cassidy.jpg)
+
+<figcaption>Cassidy Blaede, Co-Founder of elementary</figcaption>
+</figure>
 
 Since GNOME isn't the only one using GTK, I also wanted to talk to someone that worked on GTK based stuff, but not on GNOME. elementary OS was the obvious candidate, and Cassidy Blaede agreed to answer my questions:
 
