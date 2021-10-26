@@ -7,7 +7,6 @@ tags:
   - Linux
   - Open Source
   - Companion
-  - embargo
   
 hidden: true
 
