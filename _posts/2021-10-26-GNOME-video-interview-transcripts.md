@@ -30,14 +30,12 @@ Also to note: I wanted to get even more viewpoints, from people who had been cri
 <figcaption>Alexander Mikhaylenko (no pic available AFAIK) and Chris Davis, the GNOME contributors who answered my questions</figcaption>
 </figure>
 
-
-
 The conversation started with GNOME team members, namely Alexander Mikhaylenko, who also double-checked the answers with Chris Davis. Here are the questions and answers:
 
 
 **The recent moves with the much improved GNOME Software and the use of libadwaita as the main "GNOME library" make me think that GNOME wants to be more than just a desktop, a collection of applications and panels, and lean more towards being a platform that developers intentionally target. Am I in the wrong?**
 
-```That's somewhat correct, though perspectives within GNOME can vary - I think most of us want GNOME to be a stable platform that developers can target, and to have a solid foundational experience for users out of the box.```
+That's somewhat correct, though perspectives within GNOME can vary - I think most of us want GNOME to be a stable platform that developers can target, and to have a solid foundational experience for users out of the box.
 
 
 **Are there other moves that we can expect to help solidify GNOME as a stable developer platform?**
@@ -158,8 +156,7 @@ With GTK-3 we have quite a number of tweaks on top of Adwaita to make it look Ya
 
 **If this coloring API could be satisfactory, how has the work on it progressed so far?**
 
-I've seen Marco Trevinho from ubuntu-desktop team and Alexander and Chris from GNOME involved with the discussions of API for accents and palettes on libadwaita's matrix channel. Just search Trevinho/ubuntu/yaru on (https://matrix.to/#/#libadwaita:gnome.org?via=gnome.org
-) for exact discussions and re-coloring per app-basis.
+I've seen Marco Trevinho from ubuntu-desktop team and Alexander and Chris from GNOME involved with the discussions of API for accents and palettes on libadwaita's matrix channel. Just search Trevinho/ubuntu/yaru on [https://matrix.to/#/#libadwaita:gnome.org?via=gnome.org](Matrix) for exact discussions and re-coloring per app-basis.
 
 ## Conversation with Fedora
 
@@ -179,8 +176,7 @@ I also neeeded the point of view from someone who worked on a distro that shippe
 
 So first question about GNOME wanting to be more than a desktop you stack on top of a distribution, I think that is true in the sense that it has been a long held belief in the GNOME community that you can not make a great desktop if you theat your desktop operating system as a layer cake.
 
-If you read my blog post from 2014 when we where kicking of the Fedora Workstation effort I actually talk a lot about this https://blogs.gnome.org/uraeus/2014/04/16/preparing-the-ground-for-the-fedora-workstation/
- and I also mention this talk done all the way back in 2001 by Jim Gettys, a talk which I think influenced the thinking about these issues ever since.
+If you read my blog post from 2014 when we where kicking of the Fedora Workstation effort I actually [https://blogs.gnome.org/uraeus/2014/04/16/preparing-the-ground-for-the-fedora-workstation/](talk a lot about this) and I also mention this talk done all the way back in 2001 by Jim Gettys, a talk which I think influenced the thinking about these issues ever since.
  
  So can this be a challenge for distributions? It definitely can be as it means that the desktop will have expectations on your system as a whole and if you want to go a different way it might take quite a bit of work. In Fedora we do relatively few downstream changes to GNOME, instead we focus on getting our features and enhancements upstreamed right away and at the same time we take part in the upstream discussions about the pathway to take to try to keep upstream from at least not taking decisions that are directly adverse to our needs, but at the same time allow the upstream to retain its independence.
  
@@ -244,7 +240,7 @@ Each of these groups probably has a different outlook on “theming,” but I ca
 
 For both the progressive GNOME folks and elementary, we largely see traditional theming as we know it on Linux desktops as a legacy implementation that is unique to “desktop Linux” for the worse. It is unlike any mainstream platform and makes it difficult for app developers to design and develop innovative, modern experiences. This is why elementary OS and GNOME 3 have never officially supported arbitrary theming via switching out the system stylesheet. There is absolutely an aesthetic and branding aspect (it’s good for screenshots of elementary OS to be recognizable as elementary OS, for example), but more important is avoiding breakage for both app developers and end users. With elementary OS, for example, we often see people who switch out their system stylesheet get upset when there is poor contrast, broken widgets, or feature (like the dark style or accent color preferences) that no longer work for them. We also see third-party apps that are doing interesting custom widgets (some of the most innovative and unique apps) completely break because some unsupported stylesheet doesn’t support the variables or style classes they depend on to make it easier to make their app.
 
-However, for users, there are three main aspects to “theming,” and this is backed up by my years-long research and studies (like https://blog.elementary.io/user-interface-study-findings/): first, aesthetics or as I like to call it "making it your own." This is the same reason we have wallpapers on every modern OS (and look at early versions of iOS to see the opposite end of this line of thinking). People want to make their computer feel like theirs, just like they might want to decorate their physical desk with their own style to make it more pleasing for them. The second major aspect is accessibility which encompasses contrast and light/dark style preferences; some people have an easier time using their computer if it temporarily or permanently looks different than the defaults. Lastly, there's the "familiarity" aspect which often overlaps with the previous two, but can also include things like a theme to make the OS look more like Windows or macOS.
+However, for users, there are three main aspects to “theming,” and this is backed up by my years-long research and studies (like [https://blog.elementary.io/user-interface-study-findings/](this post) ): first, aesthetics or as I like to call it "making it your own." This is the same reason we have wallpapers on every modern OS (and look at early versions of iOS to see the opposite end of this line of thinking). People want to make their computer feel like theirs, just like they might want to decorate their physical desk with their own style to make it more pleasing for them. The second major aspect is accessibility which encompasses contrast and light/dark style preferences; some people have an easier time using their computer if it temporarily or permanently looks different than the defaults. Lastly, there's the "familiarity" aspect which often overlaps with the previous two, but can also include things like a theme to make the OS look more like Windows or macOS.
 
 From the elementary perspective (and seemingly the progressive GNOME perspective with recent developments), we're tackling the first two aspects differently than just arbitrary themes; we've added a dark style preference and app API to address the aesthetic and accessibility needs for a dark interface while ensuring it's well supported by apps. We've even had success moving this under the FreeDesktop banner via a Portal API and now future GNOME versions will be shipping a compatible API as well (which gives us hope for third-party apps like Firefox and Chrome supporting it on Linux, too). We've also added ten new accent colors to elementary OS and a refreshed stylesheet that uses them throughout the OS in places like highlighted text, selected options, suggested actions, focus glows, and even accented text like in the Date & Time indicator. As a result, you can keep the default stylesheet and still make elementary OS feel very personalized while also ensuring it passes accessibility standards for contrast, and without breaking third-party apps. In fact, these new features are made possible because of the default stylesheet. So for us, we're happy to talk to users to discover how and why they are leaning on theming, and address those directly in the system stylesheet. Of course with open source software people will always be able to go and change how it looks and works, but we're focused on making the default experience adress the majority of those cases while also avoiding breakage.
 
