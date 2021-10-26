@@ -8,20 +8,20 @@ tags:
   - Open Source
   - Companion
 hidden: true
-date: 2021-10-27
+date: 2021-10-26
 ---
 
 I just published a video detailing the facts about GNOME's transition to become a platform, the move to libadwaita, and the impacts on GTK, on GNOME, on GTK-based desktops, and on theming. THis video was made thanks to a few questions I asked a bunch of people in the Linux community, including people working on GNOME, on elementary OS, on Fedora, or on the Yaru theme. Of course, I couldn't include all their answers in the video, so here are the transcripts of the conversations I had with them, so you can get more information.
 
 But first, you should definitely watch the video!
 
-<p align="center"><iframe style="width:75%;height:300px;" src="https://www.youtube.com/embed/w5TjoBxqBZw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<p align="center"><iframe style="width:75%;height:300px;" src="https://www.youtube.com/embed/Pdx_MwcMtnM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
 Also to note: I wanted to get even more viewpoints, from people who had been penly critical of this move to libadwaita, including Jeremy Soller, from System76 and PopOS, and Joshua Strobl, who works on Solus, but they declined to comment, as they felt they had already stated their views. I respect that 100%, but I just wanted to mention it here, to fend off the "why didn't you talk to X" comments :) 
 
 ## Discussion with GNOME team members
 
-The conversation started with GNOME team members, namely Alexander Mikhailenko, who also double-checked the answers with Chris Davies. Here are the questions and answers:
+The conversation started with GNOME team members, namely Alexander Mikhaylenko, who also double-checked the answers with Chris Davis. Here are the questions and answers:
 
 
 **The recent moves with the much improved GNOME Software and the use of libadwaita as the main "GNOME library" make me think that GNOME wants to be more than just a desktop, a collection of applications and panels, and lean more towards being a platform that developers intentionally target. Am I in the wrong?**
