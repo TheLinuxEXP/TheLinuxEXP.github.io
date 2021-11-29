@@ -12,7 +12,7 @@ date: 2021-10-26
 
 ---
 
-I just published a video showcasing 17 applications that are designed for elementary OS, but can be installed on any other distribution, and I tend to use a lot of them daily, so here are my use cases for these wonderful apps (or pgorams if you hate the word apps).
+I just published a video showcasing 17 applications that are designed for elementary OS, but can be installed on any other distribution, and I tend to use a lot of them daily, so here are my use cases for these wonderful apps (or programs if you hate the word apps).
 
 But first, you should definitely watch the video!
 
