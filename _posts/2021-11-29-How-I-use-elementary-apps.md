@@ -33,6 +33,7 @@ But first, you should definitely watch the video!
 
 Clips is that cute little clipboard manager that stores anything and everything. Of course, it's using  X.org, because it's insecurely getting access to virtually anything you copy from any other app, and it doesn't work on Wayland for now, but since I'm still stuck on the X.org side of Linux, thanks to my reliance on Nvidia GPUs, I can enjoy its benefits.
 
+
 I only use Clips as a complete repository of everything I ever copied. If I remember copying something but can't be bothered to find the file back again, or the webpage, or the link, I just open Clips, and find it there, thanks to the handy search. It's super useful when writing the scripts for the Linux news videos, where I have to copy tons of links, but also for various research whenever I work on a video. Ever since I started using Epiphany, it's also become some kind of password manager, since Epiphany tends to really fail at filling in your login forms, even with the credentials stored in its password database. I should probably use a real password manager for this, though.
 
 
@@ -128,7 +129,6 @@ Tuner is my go-to app when I need to relax with music. See, I'm a Youtube Premiu
 
 Tuner solves that: I don't decide the programmation or playlist, just the genre and the webradio. If I really LOVE a song, I can peek at the name and add it to my Youtube Music playlists, but if not, I can just let that play in the background and not worry about curating anything. It's great.
 
-</hr>
 
 And that's about it! I also tend to use Mixer, Outliner and Minder from time to time, but not in any "officially part of my workflow" capacity. I love that these apps are available anywhere thanks to Flatpak, and I can keep the same workflow on my desktop and laptop, even though they're not both running elementary (only the laptop has that honor). 
 
