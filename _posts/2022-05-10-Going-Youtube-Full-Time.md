@@ -18,7 +18,7 @@ I'm writing this to give context to a big change in my life, and career: after m
 
 <figure class="half" markdown="1">
 
-![Tuner](/images/posts/YoutubeFullTime/UBO.png)
+![Tuner](/images/posts/YoutubeFullTime/UBO.jpg)
 
 
 <figcaption>My alma mater. OK, I wasn't in this building specifically, there are 3 campuses.</figcaption>
@@ -39,7 +39,7 @@ Now, I had been in school ever since I was 4 or 5 years old. I finished this ini
 
 <figure class="half" markdown="1">
 
-![Tuner](/images/posts/YoutubeFullTime/suit.png)
+![Tuner](/images/posts/YoutubeFullTime/suit.jpg)
 
 
 <figcaption>I never could have rocked that kind of suit.</figcaption>
@@ -62,7 +62,7 @@ I stayed another year and a half, and I got the hang of it quickly. I even enjoy
 
 <figure class="half" markdown="1">
 
-![Tuner](/images/posts/YoutubeFullTime/burnout.png)
+![Tuner](/images/posts/YoutubeFullTime/burnout.jpg)
 
 
 <figcaption>The candle that burns twice brighter burns twice as fast.</figcaption>
@@ -83,7 +83,7 @@ In the end, the pressure of making 3 videos per week on Youtube, and mixing all 
 
 <figure class="half" markdown="1">
 
-![Tuner](/images/posts/YoutubeFullTime/youtube.png)
+![Tuner](/images/posts/YoutubeFullTime/youtube.jpg)
 
 
 <figcaption>Not my phone.</figcaption>
