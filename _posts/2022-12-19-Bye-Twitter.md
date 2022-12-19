@@ -9,15 +9,6 @@ date: 2022-12-19
 
 ---
 
-
-<figure class="half" markdown="1">
-
-![Tuner](/images/posts/byetwitter/splash.png)
-
-
-<figcaption>I'm free of the bird</figcaption>
-</figure>
-
 Twitter is a dumpster fire right now, and it makes me sad, but it also means I can't in good conscience keep using it until its major issues are sorted out. Let me explain.
 
 ## Why Twitter?
@@ -46,6 +37,15 @@ But that, in itself, isn't why I'm leaving. I'm leaving because I can't dissocia
 And so I keep talking about every stupid thing Musk does, which is basically a daily job in itself. I keep trying to interact with people who either don't understand the difference between an opinion and being actively hateful, or people who feign to ignore the difference for some reason. I basically only open Twitter to see what new idiotic decision Musk has made, and criticize it. It's become untenable, and it has silenced any other conversation. Everyone staying on Twitter is now either doing it to defend Elon, or to attack what he does, and so the whole platform is now completely useless to me, and not fun anymore.
 
 ## I'm out
+
+
+<figure class="half" markdown="1">
+
+![Tuner](/images/posts/byetwitter/splash.png)
+
+
+<figcaption>I'm free of the bird</figcaption>
+</figure>
 
 And so as of the writing of this post, I'll only post one last Tweet for the time being: a tweet to this article. I'll delete the application, and stop using it for a while. If I hear through the gravepine that things are getting better, that Musk is stepping down and being replaced by someone else, or that things are just settling down, maybe I'll consider coming back.
 
