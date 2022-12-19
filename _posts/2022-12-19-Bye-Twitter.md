@@ -9,6 +9,15 @@ date: 2022-12-19
 
 ---
 
+
+<figure class="half" markdown="1">
+
+![Tuner](/images/posts/byetwitter/splash.png)
+
+
+<figcaption>I'm free of the bird</figcaption>
+</figure>
+
 Twitter is a dumpster fire right now, and it makes me sad, but it also means I can't in good conscience keep using it until its major issues are sorted out. Let me explain.
 
 ## Why Twitter?
@@ -24,13 +33,13 @@ Twitter is the first "other" platform I ever used to supplement the channel. I d
 </figure>
 
 
-And then I started looking at what I could do on Twitter, and I stuck around. It was fun, there was always something new to see, someone new to interact with, and a cool discussion to be had. Sure, there were also idiots, bigots, goalpost-moving trolls, people who would dissect every tweet to find fault, and other who exclusively interact in bad faith, but if you were liberal with the mute button and if you learned to limit yourself to topics taht you knew you were ready to handle a conversation on, Twitter was a great place.
+And then I started looking at what I could do on Twitter, and I stuck around. It was fun, there was always something new to see, someone new to interact with, and a cool discussion to be had. Sure, there were also idiots, bigots, goalpost-moving trolls, people who would dissect every tweet to find fault, and other who exclusively interact in bad faith, but if you were liberal with the mute button and if you learned to limit yourself to topics that you knew you were ready to handle a conversation on, Twitter was a great place.
 
 And then the Musk nation attacked.
 
 ## The Acquisition
 
-Musk came in all guns blazing, with all his "free speech" rethoric. And it turned out to be the end of Twitter as I liked it. Because free speech NOT come back to Twitter, as it's more heavily censored nowadays than it's ever been, with links to other media platforms being removed, criticism against Musk being banned, journalist's accounts being removed if they even remotely touch anything approaching a Musk critic, and the amount of hate speech and brazen racism, antisemitism and other ignominious types of speech has risen so much it's out of control.
+Musk came in all guns blazing, with all his "free speech" rhetoric. And it turned out to be the end of Twitter as I liked it. Because free speech NOT come back to Twitter, as it's more heavily censored nowadays than it's ever been, with links to other media platforms being removed, criticism against Musk being banned, journalist's accounts being removed if they even remotely touch anything approaching a Musk critic, and the amount of hate speech and brazen racism, antisemitism and other ignominious types of speech has risen so much it's out of control.
 
 But that, in itself, isn't why I'm leaving. I'm leaving because I can't dissociate myself from it. It's as much a product of the "new Twitter" Musk has made than a product of myself: I can't use Twitter AND ignore all these facts. I can't block / mute everyone that has anything to do with these despicable behaviors and do as if nothing was happening.
 
