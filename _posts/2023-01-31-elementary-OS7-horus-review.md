@@ -13,7 +13,7 @@ date: 2023-01-01
 
 ---
 
-<figure class="half" markdown="1">
+<figure markdown="1">
 
 ![Tuner](/images/posts/eos7/default.png)
 
