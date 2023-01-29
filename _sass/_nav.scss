@@ -1,7 +1,7 @@
 body > header {
   background-color: var(--tle-purple);
-  color: var(--tle-red);
-  fill: var(--tle-red);
+  color: var(--header-fg-color);
+  fill: var(--header-fg-color);
 
   nav {
     display: flex;

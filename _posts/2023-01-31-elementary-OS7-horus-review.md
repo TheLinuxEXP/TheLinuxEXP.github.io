@@ -42,7 +42,7 @@ It still uses its own desktop environment called pantheon, and its own applicati
 It's codenamed Horus, which, you know me, I'm a 40K fanboy, and so I have to call it. That's HERESY.
 
 
-<figure class="half" markdown="1">
+<figure markdown="1">
 
 ![Tuner](/images/posts/eos7/heresy.png)
 
@@ -57,7 +57,7 @@ Installing OS 7 isn't different from installing OS 6, the installer looks the sa
 Which is why I always test and record the distros I show on the channel on a real laptop, not on a VM. A distro first look or review done in a VM is pretty worthless in terms of how things feel. But also, I lied, I record the installation process in a VM. Because, well, that's easier and I'm lazy.
 
 
-<figure class="half" markdown="1">
+<figure markdown="1">
 
 ![Tuner](/images/posts/eos7/about.png)
 
@@ -72,7 +72,7 @@ Nothing really changed here, but it didn't really need to, the install process a
 
 ### Look and feel
 
-<figure class="half" markdown="1">
+<figure markdown="1">
 
 ![Tuner](/images/posts/eos7/darkmode.png)
 
@@ -91,7 +91,7 @@ Which, hopefully should also bring more features. Because, yes, elementary OS fo
 
 ### App Center and Flatpak
 
-<figure class="half" markdown="1">
+<figure markdown="1">
 
 ![Tuner](/images/posts/eos7/appcenterapppage.png)
 
@@ -107,7 +107,7 @@ Since then though, GNOME Software and Discover have caught up, and so OS 7 imple
 First, the store is now responsive and works better on small sizes. It's good for tiling it on one side of the screen, but it also means it sorta looks weird, like with the search bar that feels way too big at regular window sizes.
 
 
-<figure class="half" markdown="1">
+<figure markdown="1">
 
 ![Tuner](/images/posts/eos7/smallstore.png)
 
@@ -128,7 +128,7 @@ And now for the not so good stuff on the App Center. First, it still only displa
 You still get that small text when your search returns nothing, with a link to flathub, and the sideloap app will let you add it graphically, but it still sucks that there's no simple one checkbox option to add it at install.
 
 
-<figure class="half" markdown="1">
+<figure markdown="1">
 
 ![Tuner](/images/posts/eos7/flathubtext.png)
 
@@ -141,7 +141,7 @@ Also, OS 7 still has no graphical access to Ubuntu apps from the repos, so if yo
 Third, the app pages are now way less detailed than the ones you'll get in GNOME software or Discover. No list of permissions for flatpak apps, no age ratings, no safety indication, no details about the license, and the app update info generally seems less complete than on GNOME software.
 
 
-<figure class="half" markdown="1">
+<figure markdown="1">
 
 ![Tuner](/images/posts/eos7/apppagebare.png)
 
@@ -153,7 +153,7 @@ App Center had the edge in terms of how it presented apps, but it's been surpass
 
 ### Updates and Sideloading
 
-<figure class="half" markdown="1">
+<figure markdown="1">
 
 ![Tuner](/images/posts/eos7/sideload.png)
 
@@ -168,7 +168,7 @@ This will add that big remote to your sources, and you'll have access to all Fla
 Now, once you added that, you won't get a dialog for each app you install from it, telling you it's not curated, you just get a small tag in the app's page, so there's less friction.
 
 
-<figure class="half" markdown="1">
+<figure markdown="1">
 
 ![Tuner](/images/posts/eos7/noncurated.png)
 
@@ -179,7 +179,7 @@ Now, once you added that, you won't get a dialog for each app you install from i
 Applications installed from Flathub will not reflect the elementary OS theme by default, so they'll look a bit out of place, and they won't follow your accent color, because there's no standard there yet either, and they might not follow your dark mode preference either, depending on the app, for example, libreoffice doesn't.
 
 
-<figure class="half" markdown="1">
+<figure markdown="1">
 
 ![Tuner](/images/posts/eos7/libreoffice.png)
 
@@ -193,7 +193,7 @@ Well, ok, maybe not firefox, people don't really use it anymore, unfortunately, 
 
 ### Apps
 
-<figure class="half" markdown="1">
+<figure markdown="1">
 
 ![Tuner](/images/posts/eos7/gnomeweb.png)
 
@@ -210,7 +210,7 @@ The mail client also received a lot of love. You still need to use the online ac
 
 And on a side note, these online accounts are still very limited: no Nextcloud, no Google, no Microsoft, you basically just get IMAP and CalDAV, and you have to enter all the details yourself. These online accounts are much, much better handled on GNOME or KDE.
 
-<figure class="half" markdown="1">
+<figure markdown="1">
 
 ![Tuner](/images/posts/eos7/mail.png)
 
@@ -223,7 +223,7 @@ Once you have your account, you're treated with a refreshed user interface, that
 It's now definitely a usable simple mail client, but it won't work for people who want to use it in the office.
 
 
-<figure class="half" markdown="1">
+<figure markdown="1">
 
 ![Tuner](/images/posts/eos7/tasks.png)
 
@@ -236,7 +236,7 @@ The tasks app was pretty barebones in OS6, it was a bit buggy, but now it's much
 I've been using Endeavour as a task manager on GNOME, and it's still much better. It looks just as simple, but it does a lot more, especially with its various views, like "today", "this week" and stuff like that. Tasks feels too simple by comparison.
 
 
-<figure class="half" markdown="1">
+<figure markdown="1">
 
 ![Tuner](/images/posts/eos7/files.png)
 
@@ -247,7 +247,7 @@ The file manager now lets you select folders by clicking on them, when before a 
 
 For me, it's the lack of Nextcloud integration that kills it: I can't right click a file and get a shareable link, and that's something I do every day on GNOME and KDE.
 
-<figure class="half" markdown="1">
+<figure markdown="1">
 
 ![Tuner](/images/posts/eos7/music.png)
 
@@ -258,7 +258,7 @@ The Music app is the one that changed the most. It's been rewritten, and it's no
 
 Personally, I don't have a local music collection anymore, I'm ashamed to say I moved on to music streaming a while ago, so I don't really care, but for people who love their own collection, then it's probably a bummer.
 
-<figure class="half" markdown="1">
+<figure markdown="1">
 
 ![Tuner](/images/posts/eos7/code.png)
 
@@ -269,7 +269,7 @@ Code, the text editor / small IDE also got a few updates, with a full height pro
 
 Hiding and showing panels is also now done from the app's menu, and hidden folders will appear in your project tree automatically.
 
-<figure class="half" markdown="1">
+<figure markdown="1">
 
 ![Tuner](/images/posts/eos7/terminal.png)
 
@@ -284,7 +284,7 @@ elementary OS apps received evolutionary changes, nothing will blow your mind co
 
 ### Settings
 
-<figure class="half" markdown="1">
+<figure markdown="1">
 
 ![Tuner](/images/posts/eos7/settings.png)
 
@@ -295,7 +295,7 @@ Let's finish this with the settings. First, you now get power profiles, with a p
 
 Hotcorners are also more configurable, in the multitasking preferences. You can now execute a custom command when activating one of these. 
 
-<figure class="half" markdown="1">
+<figure markdown="1">
 
 ![Tuner](/images/posts/eos7/power.png)
 
@@ -312,7 +312,7 @@ And you get a new option in the security panel to prevent new USB devices from b
 
 ### Will I switching back?
 
-<figure class="half" markdown="1">
+<figure markdown="1">
 
 ![Tuner](/images/posts/eos7/appmenu.png)
 
@@ -327,7 +327,7 @@ OS 7 is as polished as ever, every detail is nicely crafted and looks great, and
 
 But what elementary OS offers is now compared against other options that have matured way more quickly. Most of the advantages of elementary OS are now also present in GNOME and KDE, or they're even better in these 2 desktops than in elementary.
 
-<figure class="half" markdown="1">
+<figure markdown="1">
 
 ![Tuner](/images/posts/eos7/gnomecircle.png)
 
@@ -340,7 +340,7 @@ I just feel that the elementary team is tackling too much at once: a distro, eve
 
 And there's still the bone-headed decisions: no easy way to add Flathub in one click, no graphical access to Ubuntu repos by default, no way to add tray icons simply, no full system wide search for files, apps, folders, webpages, etc..
 
-<figure class="half" markdown="1">
+<figure markdown="1">
 
 ![Tuner](/images/posts/eos7/sideload.png)
 
