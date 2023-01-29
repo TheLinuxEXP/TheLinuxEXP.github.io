@@ -61,7 +61,7 @@ Which is why I always test and record the distros I show on the channel on a rea
 
 ![Tuner](/images/posts/eos7/about.png)
 
-<figcaption>See, I do use it bare metal.</figcaption>
+<figcaption>See, I do use it on bare metal.</figcaption>
 </figure>
 
 The installer will also auto detect if you try and click using the right mouse button, and allow you to change to a left handed configuration, there's a new page letting you connect to the internet if you're not already, and that's about it. Still no partitioning, you can do it using Gparted, but the installer doesn't have these capabilities.
@@ -197,7 +197,7 @@ Well, ok, maybe not firefox, people don't really use it anymore, unfortunately, 
 
 ![Tuner](/images/posts/eos7/gnomeweb.png)
 
-<figcaption>elementary OS 7's default mail client, GNOME Web.</figcaption>
+<figcaption>elementary OS 7's default web browser, GNOME Web.</figcaption>
 </figure>
 
 Let's look at the updates to the applications!
