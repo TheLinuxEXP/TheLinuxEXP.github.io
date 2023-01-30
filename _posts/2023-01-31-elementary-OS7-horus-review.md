@@ -28,10 +28,11 @@ So, is OS 7 enough of a leap forward to make me ditch GNOME and KDE, and move ba
 And, of course, if you like videos, well, here's this article, in video format:
 
 
-<p align="center"><iframe style="width:100%;height:500px;" src="https://www.youtube.com/embed/AmBxtGVoYEws" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<p align="center"><iframe style="width:100%;height:500px;" src="https://www.youtube.com/embed/mBxtGVoYEws" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
 <aside>
-{% include youtube.html include.id=mBxtGVoYEws %}
+{% assign include.id= include.id | where:"slug", "mBxtGVoYEws" | first %}
+{% include youtube.html include.d = include.id %}
 </aside>
 
 
