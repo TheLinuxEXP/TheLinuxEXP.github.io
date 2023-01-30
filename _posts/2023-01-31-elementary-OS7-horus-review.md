@@ -31,7 +31,8 @@ And, of course, if you like videos, well, here's this article, in video format:
 <p align="center"><iframe style="width:100%;height:500px;" src="https://www.youtube.com/embed/mBxtGVoYEws" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
 <aside>
-{% include youtube.html id=mBxtGVoYEws %}
+{% assign id = "mBxtGVoYEws" %}
+{% include youtube.html id=id %}
 </aside>
 
 
