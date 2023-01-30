@@ -15,7 +15,6 @@ date: 2023-01-01
 
 ![Tuner](/images/posts/contentcreator/splash.jpg)
 
-
 <figcaption>It might not be the biggest channel on Youtube, but I'm proud of what I accomplished</figcaption>
 </figure>
 
@@ -27,11 +26,25 @@ Let's start with what I do, exactly, because "creator" is a term that's been use
 
 My main activity is, of course, the Youtube channel, The Linux Experiment, a name that doesn't fit all that well nowadays, since it's not really an experiment anymore, as I've been daily driving Linux on all my computers for the past 5 years and never went back to any other operating system, but I like it, so it's here to stay.
 
+<figure markdown="1">
+
+![Tuner](/images/posts/contentcreator/channel.png)
+
+<figcaption>Don't go back too far on the video list, some of that stuff is really bad</figcaption>
+</figure>
+
 This channel receives at least two, and more often three new videos per week, one being a news recap about everything Linux, open source, or privacy related, and the other two ranging from opinion pieces, experiments I made, distribution reviews, application spotlights, all the way to hardware reviews, and everything in between.
 
 On top of these videos, I also have this website, that I must say I have neglected over the years, a situation that is coming to an end in 2023, as I will be able to at least publish one article per video with a full script that is way more detailed than the Youtube video description, and hopefully some exclusive articles that would not translate well into a full video.
 
 I also create a weekly podcast, the Linux and Open Source News show, that has been running for a month now, and has met with some amount of success, with about two thousand listens per episode, and I also create a weekly podcast for my supporters on Youtube and Patreon, where I talk about the channel, the various projects I start or fail to start, tech, open source, and some personal things.
+
+<figure markdown="1">
+
+![Tuner](/images/posts/contentcreator/podcast.png)
+
+<figcaption>Creating that podcast has been extremely motivating</figcaption>
+</figure>
 
 So, that's what I do: I create content, in multiple shapes and forms, that I publish on the internet, and this content is what allows me to make a living, thanks to ads, sponsors, and individual support from very nice people who like what I make.
 
@@ -50,11 +63,25 @@ At the time, I was working as Chief Product Officer for a company that employed 
 
 I decided to learn how to edit videos, so I bought a computer (I didn't own one anymore, at the time), and since I had spent all my money on a divorce and my move back to Brest, I bought a cheap laptop from Acer, that came without an OS, and with a GPU that I felt would be enough for video editing.
 
+<figure markdown="1">
+
+![Tuner](/images/posts/contentcreator/laptop.webp)
+
+<figcaption>The first device I used for making videos</figcaption>
+</figure>
+
 The lack of an OS wasn't really an issue, as I had already used Linux in the past, so I installed elementary OS on it and called it a day. I didn't own a camera, my phone didn't feel like a good enough starting point, and I didn't have any idea what to make videos about, so I decided to make videos about elementary OS, my experience with it, and everything I could do on it, hence the name "The Linux Experiment", as I knew I wouldn't cover elementary OS exclusively.
 
 At the time, I didn't realize the name was already taken by a collaborative website where multiple people submit articles, but they contacted me and said it was alright for me to use the name, so I stuck with it.
 
 Why did I decide to publish on Youtube? Well, since the goal was to learn how to edit videos, I needed feedback, and what better source than a bunch of strangers on the internet to give you their honest, unfiltered opinion about what you make? My first videos were absolutely terrible, but for some reason, people seemed to enjoy them anyway, and so I kept making them, taking the feedback I could into consideration, moving from unplanned brain dumps over me bumbling on a desktop, to written scripts and more edited content, and I learned to use Pitivi, then Kdenlive, then moved to Davinci Resolve when I felt Kdenlive couldn't really fit my workflow anymore, and I have since then started dabbling in Fusion, the node based editor that lets you create after effect-like titles, transitions and effects.
+
+<figure markdown="1">
+
+![Tuner](/images/posts/contentcreator/resolve.jpg)
+
+<figcaption>DaVinci Resolve really helped me step up my game</figcaption>
+</figure>
 
 I also started filming myself and cutting between my face and screen recordings, then I started adding more personality once I felt comfortable in front of the camera, and a few bad jokes here and there to make the videos less dry, and I think I've arrived at some reasonable level of quality in terms of image, audio, and content.
 
@@ -68,11 +95,26 @@ So, that's how it happened. It was an accident, basically. I never planned to ma
 
 First, working on making your own content is insanely rewarding. You get to decide what you work on, what you will talk about, and in what way. It forces you to clear your mind and formulate opinions, and it also teaches you a lot: when you tackle a new subject, you'll find new things you never heard about, you will learn about alternatives, about other ways to do things, and sometimes, a video that started with a specific opinion will end up being the complete opposite after you actually experimented with something. It forces you to get rid of your preconceived notions, and it's amazing.
 
+<figure markdown="1">
+
+![Tuner](/images/posts/contentcreator/iotas.png)
+
+<figcaption>Iotas is the app I use to write everything, plugged into Nextcloud Notes</figcaption>
+</figure>
+
+
 It's also fantastic to define your own hours: you decide when you wake up, when you start working, in what order, when you take a break, and when you resume working. If you don't feel like doing anything one day, you can, as long as you pick up the pace the next day. Of course, this can lead to some pretty poor work / life balance, so it's imperative to try and stick to a certain rhythm and calendar. Some days, I just wake up earlier, I finish all I want to do by 2 or 3 P.M. and then I go to the beach, or I play video games the whole afternoon, or I read. It's an amazing feeling of complete freedom.
 
 Working from home is also a very nice plus: no need to commute at all! I have my own office in my flat, where I work, so there's still a separation between my personal space, and my workspace, and this really makes working a pleasure. And on top of that, you don't have to answer to anyone, no micro managing boss looking at what you do, no progress report to submit, no annoying emails or conference calls: the only person you owe anything to is yourself (and sometimes your supporters and sponsors).
 
 And then, there are the other benefits. You get to test hardware that you would have had to buy to lay your hands on, like laptops, single board computers, mini-PCs, or even the Steam Deck! Sometimes, you even get to keep it afterwards, although that's a rare occurrence (thanks again Valve for gifting me my Deck review unit). And the best thing is: you don't even have to say nice things about these devices to keep them. I'm perfectly aware that these are benefits that only come when you've reached a certain audience of course, but they're still pretty nice. Right now, I have a Synology NAS sitting in my office, waiting for me to unpack it and make a video about it. It's something I have never used, and I get to try it out, and give my opinion on it, without any control by Synology themselves. It's just cool.
+
+<figure markdown="1">
+
+![Tuner](/images/posts/contentcreator/deck.webp)
+
+<figcaption>Terrible thumbnail, but this video was only possible thanks to Valve sending me a Deck</figcaption>
+</figure>
 
 And finally, there are advantages to how you can structure your life. I never wanted kids, because it felt like with a "real" 9 to 5 job, it would be too difficult to take care of a child AND have a personal life. But as a content creator, I could see myself tuning my work week and schedule around the needs of a kid, and still managing to have some "me time", because a lot of what I do these days when I work on a video IS "me time". I'm not saying it would be *easy*, but it would definitely be *easier* than with a regular, more rigid job.
 
@@ -87,6 +129,13 @@ Content creation online means confronting your work with the internet, or at lea
 First, while the vast majority of people I interact with are excellent, nice, open minded, and know how to express disagreement, or criticism constructively, there is always a part of the audience that feels like they've been raised by some caveman somewhere, or that have forgotten all manners and civility once they opened up their web browser.
 
 Some people will just express their disagreement in ways they would never dare in real life, some people try to read between the lines of what you're saying (if you didn't mention *this* then you must be paid by its competitor, thus completely ignoring the fact that if you want your video to be palatable, you have to let some stuff out), and some people will just not accept that, in order to make three videos a week, you simply have to have ways to earn money, through ads, donations, or sponsors, and that you simply can't do content creation on that scale without a monetary compensation.
+
+<figure markdown="1">
+
+![Tuner](/images/posts/contentcreator/android.webp)
+
+<figcaption>This video was the source of so many bad faith comments</figcaption>
+</figure>
 
 Of course, these are fringe elements, drowned in the vast majority of positive people, but as always, one negative comment or remark will stick with you for much longer than a hundred positive ones. It's the way the human mind works, and while I've learned to accept it, move on, and quickly forget, some stuff can still get to you. Disagreeing is fine, it's even welcomed, but there's a polite and constructive way to do that.
 
