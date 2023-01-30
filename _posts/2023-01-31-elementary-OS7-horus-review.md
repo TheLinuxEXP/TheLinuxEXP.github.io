@@ -28,7 +28,7 @@ So, is OS 7 enough of a leap forward to make me ditch GNOME and KDE, and move ba
 And, of course, if you like videos, well, here's this article, in video format:
 
 
-<p align="center"><iframe style="width:80%;height:500px;" src="https://www.youtube.com/embed/ADD VIDEO ID HERE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+<p align="center"><iframe style="width:100%;height:500px;" src="https://www.youtube.com/embed/ADD VIDEO ID HERE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
 
 ## The basics
