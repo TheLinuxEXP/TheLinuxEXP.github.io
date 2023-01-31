@@ -2,7 +2,7 @@
 title:  "elementary OS 7: is it enough to make me switch?"
 description: "elementary OS was the first Linux distro I really fell in love with. Since then, it's been surpassed by GNOME and KDE, but can elementary OS 7 win me back?"
 author: nick
-image: /images/posts/eos7/splash.png
+image: /images/posts/eos7/default.png
 tags:
   - Linux
   - Distro Review
