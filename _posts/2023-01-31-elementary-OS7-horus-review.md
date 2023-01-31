@@ -6,10 +6,8 @@ image: /images/posts/eos7/splash.png
 tags:
   - Linux
   - Distro Review
-  - embargo
-  
-hidden: true
-date: 2023-01-01
+
+date: 2023-01-31
 
 ---
 
