@@ -130,7 +130,7 @@ They also have other apps that collect some amount of data, like Cozy Banks, tha
 
 <figure markdown="1">
 
-![Tuner](/images/posts/gswitch/pCLoud.png)
+![Tuner](/images/posts/gswitch/pcloud.png)
 
 
 <figcaption>pCLoud offers reasonable prices for big storage amounts</figcaption>
