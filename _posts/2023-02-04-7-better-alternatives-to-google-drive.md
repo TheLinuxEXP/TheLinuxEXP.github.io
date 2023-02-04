@@ -12,7 +12,7 @@ date: 2023-02-04
 
 <figure markdown="1">
 
-![Tuner](/images/posts/gswitch/default.png)
+![Tuner](/images/posts/gswitch/default.jpg)
 
 
 <figcaption>Google Drive isn't the best out there</figcaption>
