@@ -2,7 +2,7 @@
 title:  "7 better alternatives to Google Drive, OneDrive, or iCloud"
 description: "Cloud storage is a vital part of most people's digital lives these days, but why should you keep using Google Drive, OneDrive, or iCloud, when better and more private alternatives exist?"
 author: nick
-image: /images/posts/gswitch/default.png
+image: /images/posts/gswitch/default.jpg
 tags:
   - Privacy
 
@@ -12,7 +12,7 @@ date: 2023-02-04
 
 <figure markdown="1">
 
-![Tuner](/images/posts/gswitch/default.jpg)
+![Tuner](/images/posts/gswitch/gdrive.png)
 
 
 <figcaption>Google Drive isn't the best out there</figcaption>
