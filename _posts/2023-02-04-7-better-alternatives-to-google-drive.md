@@ -29,7 +29,7 @@ Fortunately, Google Drive, or any big tech drive storage is one of the easiest p
 </aside>
 
 
-### Nextcloud
+## Nextcloud
 
 
 <figure markdown="1">
@@ -59,7 +59,7 @@ Nextcloud is open source, updated often, and it can do plenty more than just fil
 
 **If you want to self host, or at least make sure YOU control where the files go, you can't really do any better than Nextcloud**
 
-### SyncThing
+## SyncThing
 
 
 <figure markdown="1">
@@ -78,7 +78,7 @@ It has clients for every OS, including an official one for Android, an unofficia
 
 **If what you need isn't necessarily storage that can be shared with others, but you just want a way to have all your files on all your devices, SyncThing is a great option.**
 
-### ProtonDrive
+## ProtonDrive
 
 <figure markdown="1">
 
@@ -102,7 +102,7 @@ The price gap widens for the 500 gigs tier, because for the same price, you get 
 
 **Proton Drive will probably be a no brainer for people already using Proton mail, and for people who want to replace multiple Google tools at the same time: mail, calendar AND drive.**
 
-### Cozy Cloud
+## Cozy Cloud
 
 
 <figure markdown="1">
@@ -125,7 +125,7 @@ They also have other apps that collect some amount of data, like Cozy Banks, tha
 
 **Just because they're french doesn't mean you can't use it if you don't live there. Of course, it's only called Cozy Cloud if it comes from the Cozy region of France**
 
-### pCloud
+## pCloud
 
 
 <figure markdown="1">
@@ -146,7 +146,7 @@ pCloud has clients for Linux, windows, macOS, iOS, and Android, and even a comma
 
 And they also have a password manager now if you want that. **Of course, pCLoud isn't open source, so it's up to you if you trust the promise or not. I used it for about 2 years, and I was pretty happy with it, never really had an issue**
 
-### MEGA
+## MEGA
 
 
 <figure markdown="1">
@@ -167,7 +167,7 @@ They have apps for all platforms, including Linux, and smartphones, and you can 
 
 **Whether you trust Mega or not is your choice, but it bears its name well. If what you need is more than a few million megas, then MEGA is for you**
 
-### Zoho
+## Zoho
 
 
 <figure markdown="1">
@@ -190,7 +190,7 @@ And if you trust the company, they also say they comply with GDPR, and their pri
 
 **Honestly, if I didn't use Nextcloud, I would probably use Zoho, because it would just be a full complete workspace for everything**
 
-### Other options
+## Other options
 
 And of course, these are but a selection, there are tons more that are open source, or proprietary, some you probably know about like DropBox, some you might not, like SeaFile, or Infomaniak but the selection I picked should cover basically every use case for Google Drive, and every price point people would be willing to pay, with solutions you can self host, and solutions without a cloud server
 
