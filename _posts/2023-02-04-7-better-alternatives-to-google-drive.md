@@ -10,14 +10,6 @@ date: 2023-02-04
 
 ---
 
-<figure markdown="1">
-
-![Tuner](/images/posts/gswitch/gdrive.png)
-
-
-<figcaption>Google Drive isn't the best out there</figcaption>
-</figure>
-
 Cloud storage is pretty hard to avoid these days, and one of the biggest providers is Google, a company not known for its focus on privacy. Microsoft, with OneDrive, and Apple, with iCloud Drive are also big providers, that most people use, depending on their smartphone or desktop operating system of choice.
 
 Fortunately, Google Drive, or any big tech drive storage is one of the easiest parts of the ecosystem to replace, so let's look at a bunch of alternatives, so you can finally get your files out of Big tech's computers.
