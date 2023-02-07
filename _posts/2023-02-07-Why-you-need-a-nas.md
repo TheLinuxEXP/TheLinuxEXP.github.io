@@ -1,5 +1,5 @@
 ---
-title:  "Why you probably need a NAS: your easy private home server"
+title:  "Why you need a NAS: your easy private home server"
 description: "Setting up a home server is probably the ultimate tool to stay as private as possible, but if you don't have the technical skills, or the time, then the next best thing is a NAS: it's not just for storage, it's for everything! "
 author: nick
 image: /images/posts/nas/default.jpg
