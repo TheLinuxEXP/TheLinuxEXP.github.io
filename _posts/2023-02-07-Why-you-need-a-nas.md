@@ -56,9 +56,9 @@ Still, of course, everything I'll show here will also be possible on other NAS o
 
 Let's see how you actually setup one of these things. First, you need to slot your drives in, so here are a bunch of 4TB drives that I'll insert one by one into the NAS. Pretty easy, you just remove the drive bay, you slot the drive in there, and you screw it in so it doesn't move, and you just pop that back in.
 
-Once that's done, you plug your NAS, and then you connect it to your router or internet provider box, and you boot it up. TO access the interface here, Synology just has a simple URL, but other NAS will also be accessible in the same fashion through a web browser.
+Once that's done, you plug your NAS, and then you connect it to your router or internet provider box, and you boot it up. To access the interface here, Synology just has a simple URL, but other NAS will also be accessible in the same fashion through a web browser.
 
-You go through a first run setup to install the OS on the device, and let it reboot, and then you'll need to create a storage pool to actually make use of these drives. That's where the NAS os will really make a difference compared to running your own server: you'll be able to create a RAID array graphically, so the data is replicated onto multiple drives, and one drive failing won't take down all your files. That's something that requires a bit more knowledge on a Linux server that you'd set up manually, for example.
+You go through a first run setup to install the OS on the device, and let it reboot, and then you'll need to create a storage pool to actually make use of these drives. That's where the NAS operating system will really make a difference compared to running your own server: you'll be able to create a RAID array graphically, so the data is replicated onto multiple drives, and one drive failing won't take down all your files. That's something that requires a bit more knowledge on a Linux server that you'd set up manually, for example.
 
 
 <figure markdown="1">
@@ -116,7 +116,7 @@ And if I want to auto sync files, I can use Synology Drive, which is basically e
 <figcaption>My laptop, and my desktop are now backed up to my NAS</figcaption>
 </figure>
 
-Next is Backups!. Yeah, backups ARE cool, I swear. Yiu need them. A good backup strategy is to have a local copy of your files on your computer, then a backup of that at home, and another backup of that outside of your home. Backup solutions are a dime a dozen, and you can just automate that with Synology Drive, or any other backup app for any other NAS.
+Next, let's talk Backups! Yeah, backups ARE cool, I swear. You need them. A good backup strategy is to have a local copy of your files on your computer, then a backup of that at home, and another backup of that outside of your home. Backup solutions are a dime a dozen, and you can just automate that with Synology Drive, or any other backup app for any other NAS.
 
 For example, I could backup the content of cloud storage accounts, like Google Workspace, or Microsoft 365, although since a NAS can replace all of these cloud storage solutions, that's not something I consider super useful for me personally.
 
@@ -148,7 +148,7 @@ I can install the Synology Photos app on my phone, and auto upload anything from
 <figcaption>Yes, I ripped these legally</figcaption>
 </figure>
 
-But we're just getting started. A NAS can also be used as a media server, to store your movies and TV shows that you have ripped totally legally from DVDs and BLu Rays you absolutely own, and then to stream these to any device you want in your home, or outside of your home. For example, I can install Plex in one click, from the Package Center. I could also install JellyFin using the Docker app and its docker image.
+But we're just getting started. A NAS can also be used as a media server, to store your movies and TV shows that you have ripped totally legally from DVDs and Blu-Rays you absolutely own, and then to stream these to any device you want in your home, or outside of your home. For example, I can install Plex in one click, from the Package Center. I could also install JellyFin using the Docker app and its docker image.
 
 Once it's installed, I can just configure it like any other Plex Server, by logging in to my account, or creating one, then creating a media library using folders I created in the Files app of my NAS, to keep things orderly, and that's it! Now I can run the Plex app from my smartTV or computer, connect to the server, and access all that media easily, and stream it like it was a streaming service, that I own.
 
