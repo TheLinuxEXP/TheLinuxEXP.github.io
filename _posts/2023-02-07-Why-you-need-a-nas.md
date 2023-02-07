@@ -6,8 +6,7 @@ image: /images/posts/nas/default.jpg
 tags:
   - Privacy
 
-hidden: true
-date: 2023-02-04
+date: 2023-02-07
 
 ---
 
