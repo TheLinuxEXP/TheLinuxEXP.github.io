@@ -1,5 +1,5 @@
 ---
-title:  "I'm leaving Odysee
+title:  "I'm leaving Odysee"
 description: "I don't feel comfortable publishing to this platform, so here's why, and where you can still follow me."
 author: nick
 image: /images/posts/odysee23/default.jpg
