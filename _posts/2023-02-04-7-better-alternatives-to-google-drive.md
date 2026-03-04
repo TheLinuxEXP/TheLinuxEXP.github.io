@@ -20,6 +20,30 @@ Fortunately, Google Drive, or any big tech drive storage is one of the easiest p
 {% include youtube.html id=id %}
 </aside>
 
+## Proton Drive
+
+<figure markdown="1">
+
+![Tuner](/images/posts/gswitch/proton.png)
+
+
+<figcaption>Proton now offers a complete suite of tools, with Mail, Calendar, and storage</figcaption>
+</figure>
+
+If you're already a Proton Mail customer, you might just want to look at Proton Drive.
+
+It's an end to end encrypted solution, hosted in Switzerland, with relatively strong privacy laws, that don't really matter since everything is encrypted anyways, it's not like someone could look at what you stored, since files are encrypted on your device before being sent to the cloud.
+
+It's also open source, and it obviously integrates well with the other Proton tools, like Mail or Calendar. Even though it's encrypted, you can still share files with others without file size limits, as well as password protect files, define expiration dates for links, and more.
+
+Of course, you'll have to pay, because you only get 1GB of free storage, but 200Gigs are 3 euros 99 per month, and 500 Gigs are 9.99.
+
+It's more expensive than Google Drive, for sure, but only by 1 euro a month for 200 Gigs, which should be enough for most people. If not, seriously, what do you store in there, my lifetime of photos and videos and ALL my files only occupy about 60 Gigs.
+
+The price gap widens for the 500 gigs tier, because for the same price, you get 2TB from Google. But also, Google Storage isn't encrypted<.
+
+**Proton Drive will probably be a no brainer for people already using Proton mail, and for people who want to replace multiple Google tools at the same time: mail, calendar AND drive.**
+
 
 ## Nextcloud
 
@@ -70,29 +94,7 @@ It has clients for every OS, including an official one for Android, an unofficia
 
 **If what you need isn't necessarily storage that can be shared with others, but you just want a way to have all your files on all your devices, SyncThing is a great option.**
 
-## ProtonDrive
 
-<figure markdown="1">
-
-![Tuner](/images/posts/gswitch/proton.png)
-
-
-<figcaption>Proton now offers a complete suite of tools, with Mail, Calendar, and storage</figcaption>
-</figure>
-
-If you're already a ProtonMail customer, you might just want to look at Proton Drive.
-
-It's an end to end encrypted solution, hosted in Switzerland, with relatively strong privacy laws, that don't really matter since everything is encrypted anyways, it's not like someone could look at what you stored, since files are encrypted on your device before being sent to the cloud.
-
-It's also open source, and it obviously integrates well with the other Proton tools, like Mail or Calendar. Even though it's encrypted, you can still share files with others without file size limits, as well as password protect files, define expiration dates for links, and more.
-
-Of course, you'll have to pay, because you only get 1GB of free storage, but 200Gigs are 3 euros 99 per month, and 500 Gigs are 9.99.
-
-It's more expensive than Google Drive, for sure, but only by 1 euro a month for 200 Gigs, which should be enough for most people. If not, seriously, what do you store in there, my lifetime of photos and videos and ALL my files only occupy about 60 Gigs.
-
-The price gap widens for the 500 gigs tier, because for the same price, you get 2TB from Google. But also, Google Storage isn't encrypted<.
-
-**Proton Drive will probably be a no brainer for people already using Proton mail, and for people who want to replace multiple Google tools at the same time: mail, calendar AND drive.**
 
 ## Cozy Cloud
 
