@@ -11,3 +11,21 @@ admin/.data/
 admin/.venv/
 __pycache__/
 
+
+# Never published: the admin app, old copies and archives, secrets
+admin/
+_transfer/
+_to_delete/
+.github/workflows/admin-tests.yml
+.env
+.env.*
+*.pem
+*.key
+github-token
+publish.json
+credentials.json
+
+# Planner (private)
+planner-snapshot*
+*taskplanner*
+UNIFIED.md
