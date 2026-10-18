@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Log in{% endblock %}
+{% block content %}
+<section class="modal login">
+  <h2>Site admin</h2>
+  {% if no_password %}
+    <p class="notice error">No password has been set yet. In a terminal, run:</p>
+    <pre>python3 admin/app.py set-password</pre>
+  {% else %}
+  <p class="muted">The Linux Experiment · works on this computer only.</p>
+  <form method="post">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    <div class="field"><label for="username">User name</label><input id="username" type="text" name="username" autocomplete="username" required autofocus></div>
+    <div class="field"><label for="password">Password</label><input id="password" type="password" name="password" autocomplete="current-password" required></div>
+    <div class="btn-row"><button class="btn primary" type="submit">Log in</button></div>
+  </form>
+  {% endif %}
+</section>
+{% endblock %}

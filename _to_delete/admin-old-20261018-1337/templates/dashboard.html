@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% from "_icons.html" import icon %}
+{% block title %}Content{% endblock %}
+{% block content %}
+<header class="page-head">
+  <div><h1 class="page-title">Content</h1><p class="subtitle muted">Everything on thelinuxexp.com that you can edit here.</p></div>
+  <div class="head-actions">
+    <a class="btn" href="{{ url_for('new', kind='page') }}">{{ icon("plus", 14) }} New page</a>
+    <a class="btn primary" href="{{ url_for('new', kind='article') }}">{{ icon("plus", 14) }} New article</a>
+  </div>
+</header>
+
+<section class="card preview-card">
+  <div>
+    <h2>Preview</h2>
+    {% if preview.running() %}
+      <p class="muted">Running at <a href="{{ preview.url }}" target="_blank" rel="noopener">{{ preview.url }}</a> — only visible from this computer. It rebuilds when you save.</p>
+    {% else %}
+      <p class="muted">Start a private copy of the site on this computer to check your changes before publishing.</p>
+    {% endif %}
+  </div>
+  <form method="post" action="{{ url_for('preview_control', action='stop' if preview.running() else 'start') }}">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    {% if preview.running() %}<button class="btn" type="submit">Stop preview</button>
+    {% else %}<button class="btn primary" type="submit">{{ icon("eye", 14) }} Start preview</button>{% endif %}
+  </form>
+</section>
+{% if not preview.running() %}
+  {% set tail = preview.log_tail(8) %}
+  {% if tail %}<details class="log"><summary class="muted">Last preview log</summary><pre>{{ tail }}</pre></details>{% endif %}
+{% endif %}
+
+
+<h2 class="section-header">Pages <span class="count">{{ pages|length }}</span></h2>
+{% if pages %}
+<ul class="entry-list">
+  {% for entry in pages %}
+  <li><a class="entry" href="{{ url_for('edit', kind='page', name=entry.name) }}"><span class="entry-title">{{ entry.fields.title or entry.name }}</span><span class="meta">/{{ entry.slug }}/</span></a></li>
+  {% endfor %}
+</ul>
+{% else %}<p class="empty muted">No standalone pages yet.</p>{% endif %}
+
+<h2 class="section-header">Articles <span class="count">{{ articles|length }}</span></h2>
+{% if orphans %}<p class="muted orphan-note">{{ orphans|length }} article{{ "s" if orphans|length != 1 }} marked “not linked” are not linked from any other article or page. Adding links to them from related articles helps readers and search engines find them.</p>{% endif %}
+<ul class="entry-list">
+  {% for entry in articles %}
+  <li><a class="entry" href="{{ url_for('edit', kind='article', name=entry.name) }}"><span class="entry-title">{{ entry.fields.title or entry.name }}</span><span class="meta">{% if entry in orphans %}<span class="status info">not linked</span> {% endif %}{{ entry.fields.date }} · /{{ entry.slug }}/</span></a></li>
+  {% endfor %}
+</ul>
+{% endblock %}

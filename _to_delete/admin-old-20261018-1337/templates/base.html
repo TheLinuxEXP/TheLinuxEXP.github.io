@@ -1,0 +1,47 @@
+{% from "_icons.html" import icon %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>{% block title %}Admin{% endblock %} · The Linux Experiment admin</title>
+  <link rel="icon" href="data:,">
+  <script src="{{ url_for('static', filename='theme.js') }}"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='design/tokens.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='design/bundle.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='admin.css') }}">
+  <script defer src="{{ url_for('static', filename='ui.js') }}"></script>
+  {% block head %}{% endblock %}
+</head>
+<body class="{{ 'app' if session.user else 'plain' }}">
+  {% if session.user %}
+  <aside class="sidebar" aria-label="Main">
+    <a class="brand" href="{{ url_for('dashboard') }}">The Linux Experiment<small>Site admin · this computer only</small></a>
+    <nav>
+      {% set here = request.endpoint %}
+      <a class="row-item {{ 'active' if here in ('dashboard',) }}" href="{{ url_for('dashboard') }}"><span class="ri-icon">{{ icon("content") }}</span><span class="ri-label">Content</span></a>
+      <a class="row-item {{ 'active' if here == 'header' }}" href="{{ url_for('header') }}"><span class="ri-icon">{{ icon("header") }}</span><span class="ri-label">Header</span></a>
+      <a class="row-item {{ 'active' if here == 'footer' }}" href="{{ url_for('footer') }}"><span class="ri-icon">{{ icon("footer") }}</span><span class="ri-label">Footer</span></a>
+      <a class="row-item {{ 'active' if here == 'publish' }}" href="{{ url_for('publish') }}"><span class="ri-icon">{{ icon("publish") }}</span><span class="ri-label">Publish</span></a>
+      <span class="section-label">Create</span>
+      <a class="row-item {{ 'active' if here == 'new' and request.view_args.kind == 'article' }}" href="{{ url_for('new', kind='article') }}"><span class="ri-icon">{{ icon("plus") }}</span><span class="ri-label">New article</span></a>
+      <a class="row-item {{ 'active' if here == 'new' and request.view_args.kind == 'page' }}" href="{{ url_for('new', kind='page') }}"><span class="ri-icon">{{ icon("plus") }}</span><span class="ri-label">New page</span></a>
+    </nav>
+    <div class="side-foot">
+      <button class="row-item" type="button" data-theme-toggle><span class="ri-icon">{{ icon("sun") }}</span><span class="ri-label">Light / dark</span></button>
+      <form method="post" action="{{ url_for('logout') }}">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <button class="row-item" type="submit"><span class="ri-icon">{{ icon("logout") }}</span><span class="ri-label">Log out</span></button>
+      </form>
+    </div>
+  </aside>
+  {% endif %}
+  <main>
+    {% for category, message in get_flashed_messages(with_categories=true) %}
+      <p class="notice {{ category }}" role="status">{{ message }}</p>
+    {% endfor %}
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>

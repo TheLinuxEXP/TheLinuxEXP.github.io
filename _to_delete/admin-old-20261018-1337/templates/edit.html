@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+{% from "_icons.html" import icon %}
+{% set label = "article" if kind == "article" else "page" %}
+{% block title %}{{ "Edit" if entry else "New" }} {{ label }}{% endblock %}
+{% block head %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='editor.css') }}">
+  <script defer src="{{ url_for('static', filename='vendor/markdown-it.min.js') }}"></script>
+  <script defer src="{{ url_for('static', filename='md-editor.js') }}"></script>
+  <script defer src="{{ url_for('static', filename='edit-page.js') }}"></script>
+{% endblock %}
+{% block content %}
+<form method="post" class="edit" data-kind="{{ kind }}" data-has-entry="{{ 'yes' if entry else 'no' }}">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+  <input type="hidden" name="etag" value="{{ etag }}">
+  <input type="hidden" name="swapped" value="[]">
+
+  <header class="page-head sticky">
+    <div>
+      <h1 class="page-title">{{ "Edit" if entry else "New" }} {{ label }}</h1>
+      <p class="subtitle muted">{% if entry %}/{{ values.slug }}/{% else %}Saved as a draft file on this computer until you publish.{% endif %}</p>
+    </div>
+<div class="tabs" role="tablist" aria-label="Sections">
+    <button class="tab-btn active" type="button" role="tab" id="tab-write" aria-selected="true" aria-controls="panel-write" data-tab="write">Write</button>
+    <button class="tab-btn" type="button" role="tab" id="tab-seo" aria-selected="false" aria-controls="panel-seo" data-tab="seo">SEO <span class="tab-count hidden" data-seo-count></span></button>
+  </div>
+    <div class="head-actions">
+      <span class="save-state muted" data-save-state role="status"></span>
+      <a class="btn" href="{{ url_for('dashboard') }}">Back</a>
+      <button class="btn primary" type="submit">Save</button>
+    </div>
+  </header>
+
+  <section id="panel-write" class="panel" role="tabpanel" aria-labelledby="tab-write">
+    <div class="write-grid">
+      <div class="write-main">
+        <div class="field">
+          <label for="title">Title</label>
+          <input id="title" class="title-input" type="text" name="title" value="{{ values.title }}" maxlength="200" required>
+        </div>
+        <div class="field body-field">
+          <label for="body">Text <span class="muted">(Markdown, like your existing articles)</span></label>
+          <textarea id="body" name="body" rows="28" spellcheck="true">{{ values.body }}</textarea>
+        </div>
+        <input type="file" id="file-picker" accept="image/png,image/jpeg,image/gif,image/webp" class="hidden">
+      </div>
+
+      <aside class="write-side card" aria-label="Details">
+        <h2>Details</h2>
+        <div class="field">
+          <label for="description">Short description <span class="muted">(search results and link previews)</span></label>
+          <textarea id="description" name="description" rows="3" maxlength="400">{{ values.description }}</textarea>
+          <small class="muted" data-desc-count></small>
+        </div>
+
+        <div class="field">
+          <label for="slug">Web address</label>
+          {% if entry %}
+            <input id="slug" type="text" name="slug" value="{{ values.slug }}" readonly>
+            <small class="muted">Addresses never change once created, so existing links keep working.</small>
+          {% else %}
+            <input id="slug" type="text" name="slug" value="{{ values.slug }}" pattern="[a-z0-9]+(-[a-z0-9]+)*" maxlength="80" required placeholder="my-new-{{ label }}">
+            <small class="muted">The {{ label }} will live at /<em>this-address</em>/ — lowercase letters, digits and dashes.</small>
+          {% endif %}
+        </div>
+
+        {% if kind == "article" %}
+        <div class="field-row">
+          <div class="field">
+            <label for="author">Author</label>
+            <select id="author" name="author">{% for a in authors %}<option value="{{ a }}" {{ "selected" if a == values.author }}>{{ a }}</option>{% endfor %}</select>
+          </div>
+          <div class="field">
+            <label for="date">Date</label>
+            <input id="date" type="date" name="date" value="{{ values.date }}" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="tags">Tags <span class="muted">(comma separated)</span></label>
+          <input id="tags" type="text" name="tags" value="{{ values.tags }}">
+        </div>
+        <div class="field">
+          <label for="image">Featured image <span class="muted">(cards and link previews)</span></label>
+          <div class="inline">
+            <input id="image" type="text" name="image" value="{{ values.image }}" placeholder="/images/posts/…/cover.jpg">
+            <button type="button" class="btn" data-action="featured-image">Upload…</button>
+          </div>
+          <img class="featured-preview hidden" alt="" data-featured-preview>
+        </div>
+        {% endif %}
+      </aside>
+    </div>
+  </section>
+
+  <section id="panel-seo" class="panel hidden" role="tabpanel" aria-labelledby="tab-seo">
+    <div class="seo-intro card">
+      <div>
+        <h2>Search and sharing</h2>
+        <p class="muted">Looks at what you have written right now (saved or not) and suggests the description, the featured image, alt text for pictures, and links to your other pages. Nothing changes until you accept a suggestion.</p>
+      </div>
+      <button class="btn primary" type="button" data-seo-run>{{ icon("search", 14) }} Generate SEO suggestions</button>
+    </div>
+    <section class="card seo-settings" aria-labelledby="seo-settings">
+      <h2 id="seo-settings">Search settings</h2>
+      <div class="field-row">
+        <div class="field">
+          <label for="seo_title">Search title <span class="muted">(optional, replaces the title in search results and link previews)</span></label>
+          <input id="seo_title" type="text" name="seo_title" value="{{ values.seo_title }}" maxlength="120" placeholder="Leave empty to use the title">
+          <small class="muted" data-seo-title-count></small>
+        </div>
+        <div class="field">
+          <label for="focus_keyword">Focus keyword <span class="muted">(what people would search for; only used for the checks below)</span></label>
+          <input id="focus_keyword" type="text" name="focus_keyword" value="{{ values.focus_keyword }}" maxlength="80" placeholder="e.g. kdenlive vs davinci resolve">
+        </div>
+      </div>
+    </section>
+    <div data-seo-results class="seo-results hidden">
+      <section class="card" aria-labelledby="seo-checks"><h2 id="seo-checks">Checks</h2><div data-seo-checks></div></section>
+      <section class="card" aria-labelledby="seo-meta"><h2 id="seo-meta">Meta tags</h2><div data-seo-meta></div></section>
+      <section class="card" aria-labelledby="seo-alt"><div class="card-head"><h2 id="seo-alt">Image descriptions (alt text)</h2><button class="btn small hidden" type="button" data-seo-alt-all>Apply all</button></div><div data-seo-alt></div></section>
+      <section class="card" aria-labelledby="seo-links"><h2 id="seo-links">Links to your other pages</h2><div data-seo-links></div></section>
+    </div>
+  </section>
+</form>
+{% endblock %}

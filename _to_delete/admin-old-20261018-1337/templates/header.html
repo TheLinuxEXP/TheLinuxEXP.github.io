@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% from "_rows.html" import row %}
+{% block title %}Header{% endblock %}
+{% block head %}<script defer src="{{ url_for('static', filename='rows.js') }}"></script>{% endblock %}
+{% block content %}
+<header class="page-head"><div><h1 class="page-title">Header</h1><p class="subtitle muted">The bar at the top of every page.</p></div></header>
+<form method="post" class="stack-form">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+
+  <section class="card">
+    <h2>Logo</h2>
+    <div class="field"><label for="logo_url">Link</label><input id="logo_url" type="text" name="logo_url" value="{{ data.logo.url }}" required></div>
+    <label class="flag-chip"><input type="checkbox" name="logo_new_tab" {{ "checked" if data.logo.new_tab }}> Open in a new tab</label>
+  </section>
+
+  <section class="card">
+    <h2>Menu links</h2>
+    <div data-rows="links">
+      {% for item in data.links %}{{ row("links", loop.index0, item) }}{% endfor %}
+    </div>
+    <template data-template="links">{{ row("links", "__i__", {}) }}</template>
+    <button type="button" class="btn small" data-add="links">Add link</button>
+  </section>
+
+  <section class="card">
+    <h2>Icon links <span class="muted">(right side)</span></h2>
+    <div data-rows="icons">
+      {% for item in data.icons %}{{ row("icons", loop.index0, item, icons=icons, rel=true) }}{% endfor %}
+    </div>
+    <template data-template="icons">{{ row("icons", "__i__", {}, icons=icons, rel=true) }}</template>
+    <button type="button" class="btn small" data-add="icons">Add icon link</button>
+  </section>
+
+  <div class="btn-row"><button class="btn primary" type="submit">Save header</button></div>
+</form>
+{% endblock %}

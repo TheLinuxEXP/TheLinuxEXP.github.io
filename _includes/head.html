@@ -1,24 +1,29 @@
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>{% if page.title %}{{ page.title }} &sdot; {% endif %}{{ site.title }}</title>
-  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-  <meta itemprop="name" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" sizes="256x256" href="https://www.gravatar.com/avatar/{{ site.gravatar }}?s=256&d=blank" />
-  <meta itemprop="logo" content="https://www.gravatar.com/avatar/{{ site.gravatar }}?s=256&d=blank" />
-  <link rel="shortcut icon" href="/images/favicon.ico">
-  <link rel="apple-touch-icon" href="/images/favicon.ico">
-
-  <link rel="alternate" type="application/rss+xml" title="elementary Blog" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
-
-  <meta name="author" content="{% if page.author.name %}{{ page.author.name }}{% else %}{{ site.author }}{% endif %}" />
-  <meta name="theme-color" content="{% if page.theme-color %}{{ page.theme-color }}{% else %}{{ site.theme-color }}{% endif %}" />
-
+  {% comment %}
+    SEO values, computed once. Front matter keys understood here:
+      seo_title        title used in <title> and social cards instead of "title"
+      description      meta description (posts fall back to the start of the text)
+      image            social card image
+      noindex          true to keep a page out of search engines
+      canonical        full URL, only when the canonical page lives elsewhere
+      last_modified_at set by the admin on save
+  {% endcomment %}
+  {% assign seo_title = page.seo_title | default: page.title %}
+  {% if page.layout == "post" %}
+    {% assign seo_description = page.description | default: page.content | strip_html | normalize_whitespace | truncate: 155 %}
+  {% else %}
+    {% assign seo_description = page.description | default: site.description %}
+  {% endif %}
+  {% assign seo_url = page.url | replace: "index.html", "" | prepend: site.baseurl | prepend: site.url %}
+  {% assign seo_canonical = page.canonical | default: seo_url %}
+  {% if page.layout == "post" %}
+    {% assign seo_author = site.authors[page.author].name | default: site.title %}
+  {% else %}
+    {% assign seo_author = site.title %}
+  {% endif %}
   {% if page.image %}
     {% assign prefix = page.image | slice: 0, 4 %}
     {% if prefix == "http" %}
@@ -26,6 +31,40 @@
     {% else %}
       {% assign image = page.image | prepend: site.baseurl | prepend: site.url %}
     {% endif %}
+  {% else %}
+    {% assign image = site.default_image %}
+  {% endif %}
+
+  <title>{% if seo_title %}{{ seo_title | escape }} &sdot; {% endif %}{{ site.title | escape }}</title>
+  <meta name="description" content="{{ seo_description | strip_html | normalize_whitespace | escape }}" />
+  <link rel="canonical" href="{{ seo_canonical }}" />
+  {% assign noindex = false %}
+  {% if page.noindex or page.hidden or page.url == "/404.html" %}{% assign noindex = true %}{% endif %}
+  {% if paginator.page %}{% if paginator.page > 1 %}{% assign noindex = true %}{% endif %}{% endif %}
+  {% if noindex %}
+    <meta name="robots" content="noindex, follow" />
+  {% endif %}
+
+  <meta property="og:site_name" content="{{ site.title | escape }}" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}" />
+  <meta property="og:url" content="{{ seo_canonical }}" />
+  <meta property="og:title" content="{% if seo_title %}{{ seo_title | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
+  <meta property="og:description" content="{{ seo_description | strip_html | normalize_whitespace | escape }}" />
+  {% if image %}<meta property="og:image" content="{{ image }}" />{% endif %}
+  {% if page.layout == "post" %}
+    <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}" />
+    <meta property="article:modified_time" content="{{ page.last_modified_at | default: page.date | date_to_xmlschema }}" />
+    <meta property="article:author" content="{{ seo_author | escape }}" />
+    {% for tag in page.tags %}<meta property="article:tag" content="{{ tag | escape }}" />
+    {% endfor %}
+  {% endif %}
+
+  <meta itemprop="name" content="{% if seo_title %}{{ seo_title | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
+  <meta itemprop="description" content="{{ seo_description | strip_html | normalize_whitespace | escape }}" />
+  <meta name="twitter:title" content="{% if seo_title %}{{ seo_title | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
+  <meta name="twitter:description" content="{{ seo_description | strip_html | normalize_whitespace | escape }}" />
+  {% if image %}
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="twitter:image" content="{{ image }}" />
   {% else %}
@@ -35,13 +74,75 @@
   <meta name="twitter:site" content="@{{ site.twitter }}" />
   <meta name="twitter:creator" content="@{{ site.twitter }}" />
 
-  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
-  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
-  <meta itemprop="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
-  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+  <link rel="icon" sizes="256x256" href="https://www.gravatar.com/avatar/{{ site.gravatar }}?s=256&d=blank" />
+  <meta itemprop="logo" content="https://www.gravatar.com/avatar/{{ site.gravatar }}?s=256&d=blank" />
+  <link rel="shortcut icon" href="/images/favicon.ico">
+  <link rel="apple-touch-icon" href="/images/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+
+  <meta name="author" content="{{ seo_author | escape }}" />
+  <meta name="theme-color" content="{% if page.theme-color %}{{ page.theme-color }}{% else %}{{ site.theme-color }}{% endif %}" />
+
+  {% comment %} Structured data (JSON-LD) {% endcomment %}
+  {% capture jsonld %}
+  {% if page.layout == "post" %}
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        "@id": {{ seo_canonical | append: "#article" | jsonify }},
+        "mainEntityOfPage": {{ seo_canonical | jsonify }},
+        "headline": {{ seo_title | jsonify }},
+        "description": {{ seo_description | strip_html | normalize_whitespace | jsonify }},
+        {% if image %}"image": [{{ image | jsonify }}],{% endif %}
+        "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+        "dateModified": {{ page.last_modified_at | default: page.date | date_to_xmlschema | jsonify }},
+        {% if page.tags.size > 0 %}"keywords": {{ page.tags | join: ", " | jsonify }},{% endif %}
+        "inLanguage": "en",
+        "author": { "@type": "Person", "name": {{ seo_author | jsonify }}, "url": {{ "/authors/" | prepend: site.url | append: "#" | append: page.author | jsonify }} },
+        "publisher": { "@type": "Organization", "name": {{ site.title | jsonify }}, "url": {{ site.url | jsonify }} }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": {{ site.url | append: "/" | jsonify }} },
+          { "@type": "ListItem", "position": 2, "name": {{ seo_title | jsonify }}, "item": {{ seo_canonical | jsonify }} }
+        ]
+      }
+    ]
+  }
+  {% elsif page.url == "/" %}
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": {{ site.title | jsonify }},
+    "url": {{ site.url | append: "/" | jsonify }},
+    "description": {{ site.description | jsonify }},
+    "inLanguage": "en"
+  }
+  {% elsif page.url != "/404.html" and seo_title %}
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      { "@type": "WebPage", "name": {{ seo_title | jsonify }}, "url": {{ seo_canonical | jsonify }}, "description": {{ seo_description | strip_html | normalize_whitespace | jsonify }}, "isPartOf": { "@type": "WebSite", "name": {{ site.title | jsonify }}, "url": {{ site.url | jsonify }} } },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": {{ site.url | append: "/" | jsonify }} },
+          { "@type": "ListItem", "position": 2, "name": {{ seo_title | jsonify }}, "item": {{ seo_canonical | jsonify }} }
+        ]
+      }
+    ]
+  }
+  {% endif %}
+  {% endcapture %}
+  {% assign jsonld = jsonld | strip %}
+  {% if jsonld != "" %}<script type="application/ld+json">{{ jsonld | replace: "</", "<\/" }}</script>{% endif %}
 
   <link rel="stylesheet" type="text/css" media="all" href="{{ '/css/main.css' | prepend: site.baseurl | append: '?v=' | append: site.time }}" />
-  
+
   <script defer data-domain="thelinuxexp.com" src="https://plausible.io/js/plausible.js"></script>
 
 </head>

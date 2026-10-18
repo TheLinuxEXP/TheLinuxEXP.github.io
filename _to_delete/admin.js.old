@@ -1,0 +1,82 @@
+"use strict";
+
+const csrf = () => document.querySelector('input[name="csrf_token"]').value;
+
+// ---- Editing helpers (article / page form) --------------------------------
+const form = document.querySelector("form[data-kind]");
+if (form) {
+  const body = form.elements.body;
+  const picker = document.getElementById("file-picker");
+
+  const insertAtCursor = (text) => {
+    const { selectionStart: start, selectionEnd: end, value } = body;
+    body.value = value.slice(0, start) + text + value.slice(end);
+    body.selectionStart = body.selectionEnd = start + text.length;
+    body.focus();
+  };
+
+  const upload = async (file) => {
+    const data = new FormData();
+    data.append("file", file);
+    data.append("kind", form.dataset.kind);
+    data.append("slug", form.elements.slug.value);
+    const response = await fetch("/upload", { method: "POST", body: data, headers: { "X-CSRF-Token": csrf() } });
+    const result = await response.json();
+    if (!response.ok) throw new Error(result.error || "Upload failed.");
+    return result.path;
+  };
+
+  const chooseFile = (then) => {
+    picker.value = "";
+    picker.onchange = async () => {
+      if (!picker.files.length) return;
+      try { await then(await upload(picker.files[0])); } catch (error) { alert(error.message); }
+    };
+    picker.click();
+  };
+
+  form.addEventListener("click", (event) => {
+    const action = event.target.dataset.action;
+    if (action === "insert-image") {
+      chooseFile((path) => {
+        const alt = prompt("Describe the image (alt text):", "") || "";
+        const caption = prompt("Caption shown under the image (optional):", "") || "";
+        insertAtCursor(
+          `\n<figure markdown="1">\n\n![${alt.replace(/[\[\]]/g, "")}](${path})\n\n` +
+          (caption ? `<figcaption>${caption.replace(/</g, "&lt;")}</figcaption>\n` : "") + `</figure>\n\n`
+        );
+      });
+    } else if (action === "featured-image") {
+      chooseFile((path) => { form.elements.image.value = path; });
+    } else if (action === "insert-youtube") {
+      const answer = prompt("YouTube link or video ID:", "") || "";
+      const match = answer.match(/(?:v=|youtu\.be\/|embed\/)?([A-Za-z0-9_-]{11})(?:[&?#].*)?$/);
+      if (!match) { if (answer) alert("That does not look like a YouTube link."); return; }
+      insertAtCursor(`\n<aside>\n{% assign id = "${match[1]}" %}\n{% include youtube.html id=id %}\n</aside>\n\n`);
+    }
+  });
+}
+
+// ---- Repeating rows (header / footer forms) --------------------------------
+document.querySelectorAll("[data-rows]").forEach((container) => {
+  const name = container.dataset.rows;
+  const template = document.querySelector(`template[data-template="${name}"]`);
+  let counter = container.querySelectorAll("[data-row]").length;
+  const addButton = document.querySelector(`[data-add="${name}"]`);
+
+  addButton.addEventListener("click", () => {
+    container.insertAdjacentHTML("beforeend", template.innerHTML.replaceAll("__i__", String(counter++)));
+    container.lastElementChild.querySelector("input").focus();
+  });
+
+  container.addEventListener("click", (event) => {
+    const row = event.target.closest("[data-row]");
+    if (!row) return;
+    if (event.target.matches("[data-remove]")) row.remove();
+    if (event.target.matches("[data-move]")) {
+      const step = Number(event.target.dataset.move);
+      const sibling = step < 0 ? row.previousElementSibling : row.nextElementSibling;
+      if (sibling) step < 0 ? sibling.before(row) : sibling.after(row);
+    }
+  });
+});

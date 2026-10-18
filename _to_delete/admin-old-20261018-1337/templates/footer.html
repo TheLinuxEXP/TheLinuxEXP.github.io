@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% from "_rows.html" import row %}
+{% block title %}Footer{% endblock %}
+{% block head %}<script defer src="{{ url_for('static', filename='rows.js') }}"></script>{% endblock %}
+{% block content %}
+<header class="page-head"><div><h1 class="page-title">Footer</h1><p class="subtitle muted">The strip at the bottom of every page.</p></div></header>
+<form method="post" class="stack-form">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+
+  <section class="card">
+    <div class="field"><label for="copyright">Copyright text <span class="muted">(the current year is added in front automatically)</span></label>
+      <input id="copyright" type="text" name="copyright" value="{{ data.copyright }}" maxlength="120" required></div>
+  </section>
+
+  <section class="card">
+    <h2>Links</h2>
+    <div data-rows="links">
+      {% for item in data.links %}{{ row("links", loop.index0, item, rel=true) }}{% endfor %}
+    </div>
+    <template data-template="links">{{ row("links", "__i__", {}, rel=true) }}</template>
+    <button type="button" class="btn small" data-add="links">Add link</button>
+  </section>
+
+  <div class="btn-row"><button class="btn primary" type="submit">Save footer</button></div>
+</form>
+{% endblock %}

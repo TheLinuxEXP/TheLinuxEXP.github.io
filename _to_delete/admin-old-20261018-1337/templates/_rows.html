@@ -1,0 +1,24 @@
+{% from "_icons.html" import icon %}
+{# One editable row of a list. `p` is the prefix, `i` the row index, `row` the values. #}
+{% macro row(p, i, row, icons=none, rel=false) %}
+<div class="link-row" data-row>
+  <input type="text" name="{{ p }}-{{ i }}-title" value="{{ row.title or '' }}" placeholder="Title" maxlength="80" aria-label="Title">
+  <input type="text" name="{{ p }}-{{ i }}-url" value="{{ row.url or '' }}" placeholder="https://… or /page/" aria-label="Link">
+  {% if icons is not none %}
+  <select name="{{ p }}-{{ i }}-icon" aria-label="Icon">
+    {% for name in icons %}<option value="{{ name }}" {{ "selected" if name == row.icon }}>{{ name }}</option>{% endfor %}
+  </select>
+  {% endif %}
+  {% if rel %}
+  <input type="text" name="{{ p }}-{{ i }}-rel" value="{{ row.rel or '' }}" placeholder="rel (e.g. me)" aria-label="rel" class="short">
+  {% endif %}
+  {% if icons is not none or not rel %}
+  <label class="flag-chip"><input type="checkbox" name="{{ p }}-{{ i }}-new_tab" {{ "checked" if row.new_tab }}> New tab</label>
+  {% endif %}
+  <span class="move">
+    <button type="button" class="icon-btn small" data-move="-1" title="Move up" aria-label="Move up">{{ icon("up", 14) }}</button>
+    <button type="button" class="icon-btn small" data-move="1" title="Move down" aria-label="Move down">{{ icon("down", 14) }}</button>
+    <button type="button" class="icon-btn small" data-remove title="Remove" aria-label="Remove">{{ icon("x", 14) }}</button>
+  </span>
+</div>
+{% endmacro %}

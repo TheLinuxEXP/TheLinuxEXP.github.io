@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Publish{% endblock %}
+{% block content %}
+<header class="page-head"><div><h1 class="page-title">Publish</h1><p class="subtitle muted">Send your changes to GitHub, which rebuilds and deploys the site.</p></div></header>
+{% if files %}
+  <section class="card">
+    <h2>{{ files|length }} changed file{{ "s" if files|length != 1 }}</h2>
+    <ul class="files">{% for line in files %}<li><code>{{ line }}</code></li>{% endfor %}</ul>
+  </section>
+  <form method="post" class="card">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    <div class="field"><label for="message">Describe the change</label><input id="message" type="text" name="message" maxlength="200" required placeholder="New page: About"></div>
+    <div class="btn-row start">
+      <button class="btn primary" type="submit" name="push" value="1">Commit and publish</button>
+      <button class="btn" type="submit">Commit only (don’t push)</button>
+    </div>
+    <p class="muted hint">Publishing runs <code>git add</code>, <code>git commit</code> and <code>git push</code> with your own git login.</p>
+  </form>
+{% else %}
+  <p class="empty muted">Nothing to publish: the site matches the last commit.</p>
+{% endif %}
+{% if output %}<h2 class="section-header">Output</h2><pre>{{ output }}</pre>{% endif %}
+{% endblock %}
