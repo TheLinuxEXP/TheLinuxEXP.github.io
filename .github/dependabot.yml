@@ -1,0 +1,17 @@
+# Weekly pull requests when a library has a new version. The workflows build the
+# site / run the admin tests on each one, so a breaking update shows up before
+# it is merged.
+version: 2
+updates:
+  - package-ecosystem: bundler
+    directory: "/"
+    schedule:
+      interval: weekly
+  - package-ecosystem: pip
+    directory: "/admin"
+    schedule:
+      interval: weekly
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: monthly

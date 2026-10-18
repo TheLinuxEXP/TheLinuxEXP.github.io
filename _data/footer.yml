@@ -1,0 +1,10 @@
+# Footer. The year is added automatically before the text.
+copyright: The Linux Experiment
+
+links:
+  - title: Contact me
+    url: mailto:t.linuxexperiment@gmail.com
+    rel: ""
+  - title: Mastodon
+    url: https://mastodon.social/@thelinuxEXP
+    rel: me

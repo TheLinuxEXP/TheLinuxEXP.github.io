@@ -1,7 +1,8 @@
 <footer>
-  <p>© {{ site.time | date: '%Y' }} The Linux Experiment</p>
+  <p>© {{ site.time | date: '%Y' }} {{ site.data.footer.copyright }}</p>
   <ul>
-    <li><a href="mailto:t.linuxexperiment@gmail.com" >Contact me</a></li>
-    <li><a rel="me" href="https://mastodon.social/@thelinuxEXP">Mastodon</a></li>
+    {% for link in site.data.footer.links %}
+    <li><a{% if link.rel != "" and link.rel %} rel="{{ link.rel }}"{% endif %} href="{{ link.url }}">{{ link.title }}</a></li>
+    {% endfor %}
   </ul>
 </footer>

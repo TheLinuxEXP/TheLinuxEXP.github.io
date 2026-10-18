@@ -1,0 +1,28 @@
+# Header (top navigation bar). Edited from the local admin, or by hand.
+# icon: name of a file in _includes/svg/ (without .svg)
+logo:
+  url: https://thelinuxexp.github.io
+  new_tab: false
+links:
+- title: Linux Videos
+  url: https://www.youtube.com/thelinuxexperiment
+  new_tab: true
+- title: Ethics
+  url: /Ethics/
+  new_tab: true
+icons:
+- title: RSS Feed
+  url: /feed.xml
+  icon: rss-square
+  rel: ''
+  new_tab: true
+- title: Patreon
+  url: https://patreon.com/thelinuxexperiment
+  icon: patreon
+  rel: noopener
+  new_tab: true
+- title: Mastodon
+  url: https://mastodon.social/@thelinuxEXP
+  icon: mastodon
+  rel: ''
+  new_tab: true

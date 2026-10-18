@@ -1,5 +1,6 @@
 title: "The Linux Experiment"
 description: "Linux Youtuber, now with written articles"
+url: "https://thelinuxexp.com"
 permalink: /:title/
 theme-color: "#64baff"
 gravatar: 264a76e5b40f4bb39787f617b5164b34
@@ -12,7 +13,7 @@ authors:
     name: "Nick"
     description: "Youtuber, writer, video maker, and Linux enthusiast"
     gravatar: 264a76e5b40f4bb39787f617b5164b34
-  
+
 
 plugins:
   - jekyll-feed
@@ -23,12 +24,36 @@ plugins:
 paginate: 7
 paginate_path: "/archive/:num/"
 
+# These two blocks reproduce what the github-pages gem used to force on us,
+# so articles render exactly as before.
 markdown: kramdown
 kramdown:
+  input: GFM
+  hard_wrap: false
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     block:
       line_numbers: true
 
+# Articles used to get the "post" layout from the jekyll-default-layout plugin.
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+# The SCSS still uses @import, which Dart Sass 1.x only warns about.
+sass:
+  quiet_deps: true
+  silence_deprecations:
+    - import
+
 future: false # Allows us to stage posts
-exclude: [README.md, Gemfile, Gemfile.lock, vendor]
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - admin        # local-only admin app (never published)
+  - .github

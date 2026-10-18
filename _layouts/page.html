@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+{% comment %}
+  Standalone pages (created from the local admin): same article typography as
+  an article, without the byline, tags, share buttons or "Up Next" list.
+{% endcomment %}
+
+<article>
+  <header>
+    <h1>{% include title.html title=page.title %}</h1>
+    {% if page.description %}
+      <h2>{% include title.html title=page.description %}</h2>
+    {% endif %}
+  </header>
+
+  <section>
+    {{ content }}
+  </section>
+</article>

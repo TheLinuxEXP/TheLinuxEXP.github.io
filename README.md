@@ -1,4 +1,6 @@
-Template grabbed from the elementary OS Blog, all credits to them!
+# The Linux Experiment
 
-Only added a few tweaks to make it fit to the Linux Experiment brand, and changed the links and info.
+A [Jekyll](https://jekyllrb.com) site (design adapted from the elementary OS blog),
+built and hosted by GitHub Pages.
 
+Fully adapted from eleemtnary OS blog, all credit to them.

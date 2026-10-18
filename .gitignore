@@ -1,2 +1,13 @@
-
 *.md~
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+vendor/
+.bundle/
+
+# Local admin app: credentials, session key, logs, virtualenv
+admin/.data/
+admin/.venv/
+__pycache__/
+

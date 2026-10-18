@@ -2,37 +2,23 @@
 
   <nav class="primary">
     <ul>
-      <li><a href="https://thelinuxexp.github.io" class="logomark" target="_self">
+      <li><a href="{{ site.data.header.logo.url }}" class="logomark"{% unless site.data.header.logo.new_tab %} target="_self"{% else %} target="_blank"{% endunless %}>
         {% include svg/roundedthumb.svg %}
       </a></li>
-      <li><a href="https://www.youtube.com/thelinuxexperiment" target="_blank">Linux Videos</a></li>
-            
-      <li><a href="https://thelinuxexp.com/Ethics/" target="_blank">Ethics</a></li>
+      {% for link in site.data.header.links %}
+      <li><a href="{{ link.url }}"{% if link.new_tab %} target="_blank"{% endif %}>{{ link.title }}</a></li>
+      {% endfor %}
     </ul>
-    
+
     <ul>
-      <li><a href="https://pixelfed.social/TLENick" target="_blank" rel="me" title="Pixelfed">
-        {% include svg/pixelfed.svg %}
+      {% for item in site.data.header.icons %}
+      {% capture icon_file %}svg/{{ item.icon }}.svg{% endcapture %}
+      <li><a href="{% if item.url contains '://' or item.url contains 'mailto:' %}{{ item.url }}{% else %}{{ site.baseurl }}{{ item.url }}{% endif %}"{% if item.new_tab %} target="_blank"{% endif %}{% if item.rel != "" and item.rel %} rel="{{ item.rel }}"{% endif %} title="{{ item.title }}">
+        {% include {{ icon_file }} %}
       </a></li>
-      
-      <li><a href="{{ site.baseurl }}/feed.xml" title="RSS Feed">
-        {% include svg/rss-square.svg %}
-      </a></li>
-
-      <li><a rel="me" href="https://mastodon.social/@thelinuxEXP" target="_blank" title="Mastodon">
-        {% include svg/mastodon.svg %}
-      </a></li>
-
-      <li><a href="https://twitter.com/thelinuxexp" target="_blank" rel="noopener" title="Twitter">
-        {% include svg/twitter.svg %}
-      </a></li>
-      
-      <li><a href="https://patreon.com/thelinuxexperiment" target="_blank" rel="noopener" title="Patreon">
-        {% include svg/patreon.svg %}
-      </a></li>
+      {% endfor %}
     </ul>
-    
-  
+
   </nav>
 
 </header>
